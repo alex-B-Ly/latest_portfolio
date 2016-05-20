@@ -1,5 +1,5 @@
 [{
-  "French Learner's Guide": {
+    "title": "French Learner's Guide",
     "year": 2015,
     "techs": [{
       "tech": "JavaScript"
@@ -9,9 +9,8 @@
       "tech": "Sass"
     }],
     "description": "My first site. I created the French Learner's Guide as a learning supplement to assist both students and travelers gain a better understanding of the language."
-  }
-}, {
-  "Image Search": {
+  }, {
+    "title": "Image Search",
     "year": 2016,
     "techs": [{
       "tech": "JavaScript"
@@ -21,5 +20,4 @@
       "tech": "RESTful APIs"
     }],
     "description": "Bootcamp front end project that allows users to search for a location and find its weather and images, along with a map of the location."
-  }
-}]
+  }]
