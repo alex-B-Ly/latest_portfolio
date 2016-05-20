@@ -28,6 +28,8 @@
       "tech": "jQuery"
     }, {
       "tech": "Materialize"
+    }, {
+      "tech": "Sass"
     }],
     "description": "The site you are currently on."
   }
