@@ -7,11 +7,23 @@ $(document).ready(function(){
   $('.dropdown-button').dropdown();
 
   // Portfolio
-  $('#test').on('click', function(){
+  function projects(){
   	$.getJSON('http://localhost/sites/latest_portfolio/static/js/info/projects.json', function(data){
-  		for(var i=0; i<data.length; i++){
-  			console.log(data[i]);
-  		}
+  		$(data).each(function(i, val){
+  			projectCreator(val);
+  		});
   	});
-  });
+
+  	function projectCreator(project){
+  		var newProject = $('<div>').addClass('col s10 offset-s1');
+  		var title = $('<h3>').text(project.title);
+  		var description = $('<p>').text(project.description);
+  		newProject.append(title).append(description);
+  		$('#portfolio').append(newProject);
+  	}
+  }
+
+  // FUNCTIONS CALLED ON LOAD
+  projects();
+
 });

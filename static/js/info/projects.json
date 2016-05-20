@@ -1,4 +1,5 @@
-[{
+[
+  {
     "title": "French Learner's Guide",
     "year": 2015,
     "techs": [{
@@ -20,4 +21,16 @@
       "tech": "RESTful APIs"
     }],
     "description": "Bootcamp front end project that allows users to search for a location and find its weather and images, along with a map of the location."
-  }]
+  }, {
+    "title": "Alex Ly - Web Dev",
+    "year": 2016,
+    "techs": [{
+      "tech": "jQuery"
+    }, {
+      "tech": "Materialize"
+    }, {
+      "tech": "Sass"
+    }],
+    "description": "The site you are currently on."
+  }
+]
