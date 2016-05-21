@@ -10,6 +10,7 @@ $(document).ready(function(){
   function projects(){
   	$.getJSON('http://localhost/sites/latest_portfolio/static/js/info/projects.json', function(data){
   		$(data).each(function(i, val){
+  			console.log(val);
   			projectCreator(val);
   		});
   	});
@@ -18,7 +19,8 @@ $(document).ready(function(){
   		var newProject = $('<div>').addClass('col s10 offset-s1');
   		var title = $('<h3>').text(project.title);
   		var description = $('<p>').text(project.description);
-  		newProject.append(title).append(description);
+  		var pic = $('<img>').attr('src', project.picture_url);
+  		newProject.append(title).append(pic).append(description);
   		$('#portfolio').append(newProject);
   	}
   }
