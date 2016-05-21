@@ -16,10 +16,10 @@ $(document).ready(function(){
   	});
 
   	function projectCreator(project){
-  		var newProject = $('<div>').addClass('col s10 offset-s1');
+  		var newProject = $('<div>').addClass('col s10 offset-s1 card-panel hoverable');
   		var title = $('<h3>').text(project.title);
   		var description = $('<p>').text(project.description);
-  		var pic = $('<img>').attr('src', project.picture_url);
+  		var pic = $('<img>').addClass('responsive-img').attr('src', project.picture_url);
   		newProject.append(title).append(pic).append(description);
   		$('#portfolio').append(newProject);
   	}
