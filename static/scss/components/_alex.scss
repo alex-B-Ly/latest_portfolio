@@ -1,3 +1,24 @@
 body{
 	background-color: #FFF5D5;
 }
+
+[class*=" devicon-"],
+[class^=devicon-]{
+	font-size: 7em;
+	color: #fff;
+}
+
+.front-end-list,
+.back-end-list,
+.tools-list{
+	list-style-type: none;
+}
+
+.front-end-list > li,
+.back-end-list > li,
+.tools-list > li{
+	display: inline-block;
+	margin: 20px 10px;
+	padding: 15px;
+	background: rgba(0,0,0, 0.7);
+}
