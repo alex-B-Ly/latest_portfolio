@@ -15,15 +15,13 @@ $(document).ready(function(){
   	});
 
   	function projectCreator(project){
-  		var newProject = $('<div>').addClass('col s10 offset-s1 card-panel hoverable center-align');
-  		var proj = $('<div>').addClass('project').data(project);
+  		var newProject = $('<div>').addClass('col s10 offset-s1 card-panel hoverable center-align project').data(project);
   		var title = $('<h3>').text(project.title);
   		var techTitle = $('<h5>').text('Tech Used:');
   		var descTitle = $('<h5>').text('Description:');
   		var description = $('<p>').text(project.description);
   		var pic = $('<img>').addClass('responsive-img').attr('src', project.picture_url);
-  		proj.append(pic).append(title).append(techTitle).append(descTitle).append(description);
-  		newProject.append(proj);
+  		newProject.append(pic).append(title).append(techTitle).append(descTitle).append(description);
   		$('#portfolio').append(newProject);
   	}
   }
