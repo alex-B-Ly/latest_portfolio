@@ -1,10 +1,20 @@
 body{
 	background-color: #FFF5D5;
+	/*background-color: #3E3E3E;*/
 }
 
 [class*=" devicon-"],
 [class^=devicon-]{
 	font-size: 7em;
+	color: #fff;
+}
+
+#about_me{
+	padding: 75px 0;
+}
+
+#skills{
+	background-color: #2F2F2F;
 	color: #fff;
 }
 
@@ -19,6 +29,13 @@ body{
 .tools-list > li{
 	display: inline-block;
 	margin: 20px 10px;
-	padding: 15px;
+	padding: 15px 25px;
 	background: rgba(0,0,0, 0.7);
+}
+
+footer{
+	background: $primary-color;
+	position: absolute;
+	width: 100%;
+	color: #fff;
 }

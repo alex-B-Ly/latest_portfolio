@@ -6148,11 +6148,19 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em; } }
 body {
-  background-color: #FFF5D5; }
+  background-color: #FFF5D5;
+  /*background-color: #3E3E3E;*/ }
 
 [class*=" devicon-"],
 [class^=devicon-] {
   font-size: 7em;
+  color: #fff; }
+
+#about_me {
+  padding: 75px 0; }
+
+#skills {
+  background-color: #2F2F2F;
   color: #fff; }
 
 .front-end-list,
@@ -6165,7 +6173,13 @@ body {
 .tools-list > li {
   display: inline-block;
   margin: 20px 10px;
-  padding: 15px;
+  padding: 15px 25px;
   background: rgba(0, 0, 0, 0.7); }
+
+footer {
+  background: #8A0E0E;
+  position: absolute;
+  width: 100%;
+  color: #fff; }
 
 /*# sourceMappingURL=materialize.css.map */
