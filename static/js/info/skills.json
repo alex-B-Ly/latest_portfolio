@@ -1,0 +1,35 @@
+{
+	"skills": {
+		"front_end": [{
+			"HTML5":{}
+		}, {
+			"CSS3":{}
+		}, {
+			"JavaScript":{}
+		}, {
+			"jQuery":{}
+		}, {
+			"Sass":{}
+		}, {
+			"Bootstrap":{}
+		}, {
+			"Angular":{}
+		}],
+		"back_end": [{
+			"Node": {}
+		}, {
+			"MongoDB": {}
+		}, {
+			"MySQL": {}
+		}],
+		"tools": [{
+			"Git": {}
+		}, {
+			"GitHub": {}
+		}, {
+			"Heroku": {}
+		}, {
+			"Trello": {}
+		}]
+	}
+}

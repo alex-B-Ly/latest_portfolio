@@ -11,7 +11,10 @@ $(document).ready(function(){
 
   // Skills
   $('.skill-trigger').on('click', function(){
-    console.log($(this).children());
+    // console.log($(this).children());
+    $.getJSON('http://localhost/sites/latest_portfolio/static/js/info/skills.json', function(data){
+      console.log(data);
+    });
   });
 
   // Portfolio
@@ -25,9 +28,6 @@ $(document).ready(function(){
   	function projectCreator(project){
   		var newProject = $('<div>').addClass('col s10 offset-s1 l6 card-panel hoverable center-align project').data(project);
   		var title = $('<h4>').text(project.title);
-  		// var techTitle = $('<h5>').text('Tech Used:');
-  		// var descTitle = $('<h5>').text('Description:');
-  		// var description = $('<p>').text(project.description);
   		var pic = $('<img>').addClass('responsive-img').attr('src', project.picture_url);
   		newProject.append(pic).append(title);
   		$('#portfolio').append(newProject);
