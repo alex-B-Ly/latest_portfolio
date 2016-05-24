@@ -12,10 +12,21 @@ $(document).ready(function(){
   // Skills
   $('.skill-trigger').on('click', function(){
     var skillType = $(this).attr('data-skill-type');
+    var skillName = $(this).attr('data-skill-name');
 
     $.getJSON('http://localhost/sites/latest_portfolio/static/js/info/skills.json', function(data){
-      console.log(data[skillType]);
+      for(var i=0; i<data[skillType].length; i++){
+        if(data[skillType][i].skill === skillName){
+          skillModal(data[skillType][i]);
+        }
+      }
     });
+
+    // SKILL MODAL FUNCTION
+    function skillModal(skillChosen){
+      $('.skill-modal-title').text(skillChosen.skill);
+    }
+
   });
 
   // Portfolio
