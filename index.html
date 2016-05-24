@@ -11,23 +11,41 @@
 <body>
 
   <header>
-  <ul id="nav-drop" class="dropdown-content">
-    <li>
-      <a href="https://github.com/alex-B-Ly" target="_blank">GitHub</a>
-    </li>
-    <li>
-      <a href="https://www.linkedin.com/in/alex-ly-2763b652"  target="_blank">LinkedIn</a>
-    </li>
-    <li>
-      <a href="#">Resume</a>
-    </li>
-  </ul>
-  <nav>
-    <div class="nav-wrapper">
-      <div class="container">
-      <a href="#!" class="brand-logo">Alex Ly</a>
-      <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
+    <ul id="nav-drop" class="dropdown-content">
+      <li>
+        <a href="https://github.com/alex-B-Ly" target="_blank">GitHub</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/alex-ly-2763b652"  target="_blank">LinkedIn</a>
+      </li>
+      <li>
+        <a href="#">Resume</a>
+      </li>
+    </ul>
+    <nav>
+      <div class="nav-wrapper">
+        <div class="container">
+        <a href="#!" class="brand-logo">Alex Ly</a>
+        <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="#about_me">About Me</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#contact">Contact Me</a>
+            </li>
+            <li>
+              <a class="dropdown-button" href="#!" data-activates="nav-drop">More<i class="material-icons right">arrow_drop_down</i></a>
+            </li>
+          </ul>
+        </div>
+        <ul class="side-nav" id="mobile-nav">
           <li>
             <a href="#about_me">About Me</a>
           </li>
@@ -40,37 +58,19 @@
           <li>
             <a href="#contact">Contact Me</a>
           </li>
+          <li class="divider"></li>
           <li>
-            <a class="dropdown-button" href="#!" data-activates="nav-drop">More<i class="material-icons right">arrow_drop_down</i></a>
+            <a href="https://github.com/alex-B-Ly" target="_blank">GitHub</a>
           </li>
+          <li>
+            <a href="https://www.linkedin.com/in/alex-ly-2763b652" target="_blank">LinkedIn</a>
+          </li>
+          <li>
+            <a href="#">Resume</a>
+          </li> 
         </ul>
       </div>
-      <ul class="side-nav" id="mobile-nav">
-        <li>
-          <a href="#about_me">About Me</a>
-        </li>
-        <li>
-          <a href="#skills">Skills</a>
-        </li>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>
-          <a href="#contact">Contact Me</a>
-        </li>
-        <li class="divider"></li>
-        <li>
-          <a href="https://github.com/alex-B-Ly" target="_blank">GitHub</a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/alex-ly-2763b652" target="_blank">LinkedIn</a>
-        </li>
-        <li>
-          <a href="#">Resume</a>
-        </li> 
-      </ul>
-    </div>
-  </nav>
+    </nav>
   </header>
 
   <div class="container">
@@ -88,30 +88,45 @@
     <section id="skills" class="row center-align">
       <div class="col s12">
         <h2>Skills</h2>
+        <p>Click on a skill for more information.</p>
       </div>
       <div class="col s12">
         <h3>Front End</h3>
         <ul class="front-end-list">  
           <li>
-            <i class="devicon-html5-plain-wordmark" title="HTML5"></i>
+            <a class="modal-trigger skill-trigger" href="#skill-modal">
+              <i class="devicon-html5-plain-wordmark" title="HTML5"></i>  
+            </a>
           </li>
           <li>
-            <i class="devicon-css3-plain-wordmark" title="CSS3"></i>
+            <a class="modal-trigger skill-trigger" href="#skill-modal">
+              <i class="devicon-css3-plain-wordmark" title="CSS3"></i>
+            </a>
           </li>
           <li>
-            <i class="devicon-javascript-plain" title="JavaScript"></i>
+            <a class="modal-trigger skill-trigger" href="#skill-modal">
+              <i class="devicon-javascript-plain" title="JavaScript"></i>
+            </a>
           </li>
           <li>
-            <i class="devicon-jquery-plain-wordmark" title="jQuery"></i>
+            <a class="modal-trigger skill-trigger" href="#skill-modal">
+              <i class="devicon-jquery-plain-wordmark" title="jQuery"></i>
+            </a>
           </li>
           <li>
-            <i class="devicon-sass-original" title="Sass"></i>
+            <a class="modal-trigger skill-trigger" href="#skill-modal">
+              <i class="devicon-sass-original" title="Sass"></i>
+            </a>
           </li>
           <li>
-            <i class="devicon-bootstrap-plain-wordmark" title="Bootstrap"></i>
+            <a class="modal-trigger skill-trigger" href="#skill-modal">
+              <i class="devicon-bootstrap-plain-wordmark" title="Bootstrap"></i>
+            </a>
           </li>
           <li>
-            <i class="devicon-angularjs-plain-wordmark" title="AngularJS"></i>
+            <a class="modal-trigger skill-trigger" href="#skill-modal">
+              <i class="devicon-angularjs-plain-wordmark" title="AngularJS"></i>
+            </a>
           </li>
         </ul>
       </div>
@@ -119,13 +134,19 @@
         <h3>Back End</h3>
         <ul class="back-end-list">
           <li>
-            <i class="devicon-nodejs-plain-wordmark" title="NodeJS"></i>
+            <a class="modal-trigger skill-trigger" href="#skill-modal">
+              <i class="devicon-nodejs-plain-wordmark" title="NodeJS"></i>
+            </a>
           </li>
           <li>
-            <i class="devicon-mongodb-plain-wordmark" title="MongoDB"></i>
+            <a class="modal-trigger skill-trigger" href="#skill-modal">
+              <i class="devicon-mongodb-plain-wordmark" title="MongoDB"></i>
+            </a>
           </li>
           <li>
-            <i class="devicon-mysql-plain-wordmark" title="MySQL"></i>
+            <a class="modal-trigger skill-trigger" href="#skill-modal">
+              <i class="devicon-mysql-plain-wordmark" title="MySQL"></i>
+            </a>
           </li>
         </ul>
       </div>
@@ -133,16 +154,24 @@
         <h3>Tools</h3>
         <ul class="tools-list">
           <li>
-            <i class="devicon-git-plain-wordmark" title="Git"></i>
+            <a class="modal-trigger skill-trigger" href="#skill-modal">
+              <i class="devicon-git-plain-wordmark" title="Git"></i>
+            </a>
           </li>
           <li>
-            <i class="devicon-github-plain-wordmark" title="GitHub"></i>
+            <a class="modal-trigger skill-trigger" href="#skill-modal">
+              <i class="devicon-github-plain-wordmark" title="GitHub"></i>
+            </a>
           </li>
           <li>
-            <i class="devicon-heroku-line-wordmark" title="Heroku"></i>   
+            <a class="modal-trigger skill-trigger" href="#skill-modal">
+              <i class="devicon-heroku-line-wordmark" title="Heroku"></i>   
+            </a>
           </li>
           <li>
-            <i class="devicon-trello-plain-wordmark" title="Trello"></i>
+            <a class="modal-trigger skill-trigger" href="#skill-modal">
+              <i class="devicon-trello-plain-wordmark" title="Trello"></i>
+            </a>
           </li>
         </ul>
       </div>
@@ -161,9 +190,19 @@
 
   <footer>
     <div class="container center-align">
-      <p class="valign">Thank you for visiting my site.  Have a nice day.</p>
+      <p class="valign">Thank you for visiting.  Have a nice day.</p>
     </div>
   </footer>
+
+  <!-- MODALS -->
+  <div id="skill-modal" class="modal center-align">
+    <div class="modal-content">
+      <h4 class="skill-modal-title"></h4>
+    </div>
+    <div class="modal-footer">
+      <a href="#" class="modal-action modal-close btn-flat">Close</a>
+    </div>
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
