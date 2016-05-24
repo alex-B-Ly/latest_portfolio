@@ -1,0 +1,47 @@
+[
+	[{
+		"skill": "HTML5",
+		"description": ""
+	}, {
+		"skill": "CSS3",
+		"description": ""
+	}, {
+		"skill": "JavaScript",
+		"description": ""
+	}, {
+		"skill": "jQuery",
+		"description": ""
+	}, {
+		"skill": "Sass",
+		"description": ""
+	}, {
+		"skill": "Bootstrap",
+		"description": ""
+	}, {
+		"skill": "Angular",
+		"description": ""
+	}],
+	[{
+		"skill": "Node",
+		"description": ""
+	}, {
+		"skill": "MongoDB",
+		"description": ""
+	}, {
+		"skill": "MySQL",
+		"description": ""
+	}],
+	[{
+		"skill": "Git",
+		"description": ""
+	}, {
+		"skill": "GitHub",
+		"description": ""
+	}, {
+		"skill": "Heroku",
+		"description": ""
+	}, {
+		"skill": "Trello",
+		"description": ""
+	}]
+]

@@ -14,7 +14,7 @@ $(document).ready(function(){
     var skillType = $(this).attr('data-skill-type');
     var skillName = $(this).attr('data-skill-name');
 
-    $.getJSON('http://localhost/sites/latest_portfolio/static/js/info/skills.json', function(data){
+    $.getJSON('http://localhost/sites/latest_portfolio/static/js/info/skills.v0.1.json', function(data){
       for(var i=0; i<data[skillType].length; i++){
         if(data[skillType][i].skill === skillName){
           skillModal(data[skillType][i]);
@@ -25,6 +25,7 @@ $(document).ready(function(){
     // SKILL MODAL FUNCTION
     function skillModal(skillChosen){
       $('.skill-modal-title').text(skillChosen.skill);
+      $('.skill-modal-description').text(skillChosen.description);
     }
 
   });
