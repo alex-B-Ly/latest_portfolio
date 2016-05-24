@@ -1,35 +1,33 @@
-{
-	"skills": {
-		"front_end": [{
-			"HTML5":{}
-		}, {
-			"CSS3":{}
-		}, {
-			"JavaScript":{}
-		}, {
-			"jQuery":{}
-		}, {
-			"Sass":{}
-		}, {
-			"Bootstrap":{}
-		}, {
-			"Angular":{}
-		}],
-		"back_end": [{
-			"Node": {}
-		}, {
-			"MongoDB": {}
-		}, {
-			"MySQL": {}
-		}],
-		"tools": [{
-			"Git": {}
-		}, {
-			"GitHub": {}
-		}, {
-			"Heroku": {}
-		}, {
-			"Trello": {}
-		}]
-	}
-}
+[
+	[{
+		"skill": "HTML5"
+	}, {
+		"skill": "CSS3"
+	}, {
+		"skill": "JavaScript"
+	}, {
+		"skill": "jQuery"
+	}, {
+		"skill": "Bootstrap"
+	}, {
+		"skill": "Angular"
+	}, {
+
+	}],
+	[{
+		"skill": "Node"
+	}, {
+		"skill": "MongoDB"
+	}, {
+		"skill": "MySQL"
+	}],
+	[{
+		"skill": "Git"
+	}, {
+		"skill": "GitHub"
+	}, {
+		"skill": "Heroku"
+	}, {
+		"skill": "Trello"
+	}]
+]

@@ -11,9 +11,10 @@ $(document).ready(function(){
 
   // Skills
   $('.skill-trigger').on('click', function(){
-    // console.log($(this).children());
+    var skillType = $(this).attr('data-skill-type');
+
     $.getJSON('http://localhost/sites/latest_portfolio/static/js/info/skills.json', function(data){
-      console.log(data);
+      console.log(data[skillType]);
     });
   });
 
