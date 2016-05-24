@@ -10,7 +10,9 @@ $(document).ready(function(){
   $('.modal-trigger').leanModal();
 
   // Skills
-  
+  $('.skill-trigger').on('click', function(){
+    console.log($(this).children());
+  });
 
   // Portfolio
   function projects(){

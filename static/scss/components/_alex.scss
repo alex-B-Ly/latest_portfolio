@@ -41,7 +41,7 @@ body{
 .tools-list > li{
 	display: inline-block;
 	margin: 20px 10px;
-	padding: 15px 25px;
+	/*padding: 15px 25px;*/
 	background: rgba(0,0,0, 0.5);
 	box-shadow: 0 0 10px #550000;
 	transition: box-shadow 1.2s;
@@ -52,6 +52,11 @@ body{
 .back-end-list > li:hover,
 .tools-list > li:hover{
 	box-shadow: 0 0 40px #0B6E0B;
+}
+
+.skill-trigger{
+	display: block;
+	padding: 15px 25px;
 }
 
 /* PROJECTS SECTION */
