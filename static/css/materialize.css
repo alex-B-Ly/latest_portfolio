@@ -6148,16 +6148,21 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em; } }
 body {
-  background-color: #FFF5D5;
+  background-color: #F3E9DC;
   /*background-color: #3E3E3E;*/ }
 
-[class*=" devicon-"],
-[class^=devicon-] {
-  font-size: 7em;
-  color: #fff; }
-
+/* ABOUT ME SECTION */
 #about_me {
   padding: 75px 0; }
+
+#about_me p {
+  font-size: 1.5em; }
+
+/* SKILL SECTION */
+[class*=" devicon-"],
+[class^=devicon-] {
+  font-size: 5.5em;
+  color: #fff; }
 
 #skills {
   padding: 75px 0;
@@ -6180,8 +6185,21 @@ body {
   display: inline-block;
   margin: 20px 10px;
   padding: 15px 25px;
-  background: rgba(0, 0, 0, 0.7); }
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px #550000;
+  transition: box-shadow 1.2s;
+  cursor: pointer; }
 
+.front-end-list > li:hover,
+.back-end-list > li:hover,
+.tools-list > li:hover {
+  box-shadow: 0 0 40px #aa0000; }
+
+/* PROJECTS SECTION */
+.project {
+  padding: 30px 0 10px 0 !important; }
+
+/* FOOTER */
 footer {
   background: #8A0E0E;
   position: absolute;

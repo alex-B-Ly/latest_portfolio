@@ -21,7 +21,7 @@ $(document).ready(function(){
   		var descTitle = $('<h5>').text('Description:');
   		var description = $('<p>').text(project.description);
   		var pic = $('<img>').addClass('responsive-img').attr('src', project.picture_url);
-  		newProject.append(pic).append(title).append(techTitle).append(descTitle).append(description);
+  		newProject.append(pic).append(title);
   		$('#portfolio').append(newProject);
   	}
   }
