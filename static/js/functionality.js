@@ -6,6 +6,12 @@ $(document).ready(function(){
   // Materialize Dropdown
   $('.dropdown-button').dropdown();
 
+  // Materialize Modal
+  $('.modal-trigger').leanModal();
+
+  // Skills
+  
+
   // Portfolio
   function projects(){
   	$.getJSON('http://localhost/sites/latest_portfolio/static/js/info/projects.json', function(data){
