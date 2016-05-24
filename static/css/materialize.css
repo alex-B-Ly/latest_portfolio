@@ -6197,7 +6197,8 @@ body {
 
 /* PROJECTS SECTION */
 .project {
-  padding: 30px 0 10px 0 !important; }
+  padding: 30px 0 10px 0 !important;
+  cursor: pointer; }
 
 /* FOOTER */
 footer {
