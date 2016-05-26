@@ -15,9 +15,10 @@ $(document).ready(function(){
     var skillName = $(this).attr('data-skill-name');
 
     $.getJSON('http://localhost/sites/latest_portfolio/static/js/info/skills.v0.1.json', function(data){
-      for(var i=0; i<data[skillType].length; i++){
-        if(data[skillType][i].skill === skillName){
-          skillModal(data[skillType][i]);
+      var skillData = data[skillType];
+      for(var i=0, len=skillData.length; i<len; i++){
+        if(skillData[i].skill === skillName){
+          skillModal(skillData[i]);
         }
       }
     });
