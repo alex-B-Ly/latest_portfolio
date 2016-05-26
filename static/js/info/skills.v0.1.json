@@ -1,7 +1,7 @@
 [
 	[{
 		"skill": "HTML5",
-		"description": ""
+		"description": "Like many people, my journey in web development started with HTML.  After starting to write out bigger pages, I quickly learned the importance of proper indentation and organization with the use of semantic tags."
 	}, {
 		"skill": "CSS3",
 		"description": "I started studying CSS in summer 2014, going over several courses on Team Treehouse and Code School, as well as reading a few books.  At first, I learned all about the box model and media queries, got frustrated with positioning for a while, and got into animations and other techniques.  Then I discovered the usefulness of using Sass and frameworks such as Bootstrap."
@@ -13,10 +13,10 @@
 		"description": ""
 	}, {
 		"skill": "Sass",
-		"description": ""
+		"description": "When I discovered that I could use Sass to include things like functions, mixins and variables as part of the styling process, I asked myself why I had spent hours writing out repetitive CSS and have been using scss ever since."
 	}, {
 		"skill": "Bootstrap",
-		"description": ""
+		"description": "I use Bootstrap and other frameworks (this site uses Materialize) to facilitate and speed up development with the use of a grid system that has built in JS components."
 	}, {
 		"skill": "Angular",
 		"description": ""
@@ -33,13 +33,13 @@
 	}],
 	[{
 		"skill": "Git",
-		"description": ""
+		"description": "I use Git as my version control system, which allows me to create new branches and go back to previous work if necessary."
 	}, {
 		"skill": "GitHub",
-		"description": ""
+		"description": "I use GitHub to save my work online as a backup or if I am working collaboratively on a project.  For more information, please check the link to my profile in the navigation bar dropdown menu."
 	}, {
 		"skill": "Heroku",
-		"description": ""
+		"description": "When I first started studying development, I used FTP to upload files (this site uses FTP).  Since 2015, I have been using the Heroku cloud platform to upload things."
 	}, {
 		"skill": "Trello",
 		"description": ""
