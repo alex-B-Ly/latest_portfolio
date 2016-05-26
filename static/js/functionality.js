@@ -25,7 +25,7 @@ $(document).ready(function(){
     // SKILL MODAL FUNCTION
     function skillModal(skillChosen){
       $('.skill-modal-title').text(skillChosen.skill);
-      $('.skill-modal-title').append('<hr>');
+      $('#skill-modal-itag').removeClass().addClass(skillChosen.itag_class);
       $('.skill-modal-description').text(skillChosen.description);
     }
 
