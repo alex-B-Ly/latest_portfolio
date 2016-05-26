@@ -1,7 +1,9 @@
 $(document).ready(function(){
   
   // Materialize Side Nav
-  $(".button-collapse").sideNav();
+  $(".button-collapse").sideNav({
+    closeOnClick: true
+  });
 
   // Materialize Dropdown
   $('.dropdown-button').dropdown();
