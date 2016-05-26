@@ -6184,7 +6184,6 @@ body {
 .tools-list > li {
   display: inline-block;
   margin: 20px 10px;
-  /*padding: 15px 25px;*/
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 10px #550000;
   transition: box-shadow 1.2s;
@@ -6198,6 +6197,16 @@ body {
 .skill-trigger {
   display: block;
   padding: 15px 25px; }
+
+.skill-modal-title {
+  font-size: 3em;
+  padding-top: 20px; }
+
+#skill-modal-itag {
+  color: #000; }
+
+.skill-modal-description {
+  font-size: 1.3em; }
 
 /* PROJECTS SECTION */
 .project {

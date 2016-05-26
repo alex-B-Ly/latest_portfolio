@@ -1,0 +1,61 @@
+[
+	[{
+		"skill": "HTML5",
+		"description": "Like many people, my journey in web development started with HTML.  After starting to write out bigger pages, I quickly learned the importance of proper indentation and organization with the use of semantic tags.",
+		"itag_class": "devicon-html5-plain"
+	}, {
+		"skill": "CSS3",
+		"description": "I started studying CSS in summer 2014, going over several courses on Team Treehouse and Code School, as well as reading a few books.  At first, I learned all about the box model and media queries, got frustrated with positioning for a while, and got into animations and other techniques.  Then I discovered the usefulness of using Sass and frameworks such as Bootstrap.",
+		"itag_class": "devicon-css3-plain"
+	}, {
+		"skill": "JavaScript",
+		"description": "",
+		"itag_class": "devicon-javascript-plain"
+	}, {
+		"skill": "jQuery",
+		"description": "",
+		"itag_class": "devicon-jquery-plain"
+	}, {
+		"skill": "Sass",
+		"description": "When I discovered that I could use Sass to include things like functions, mixins and variables as part of the styling process, I asked myself why I had spent hours writing out repetitive CSS and have been using scss ever since.",
+		"itag_class": "devicon-sass-original"
+	}, {
+		"skill": "Bootstrap",
+		"description": "I use Bootstrap and other frameworks (this site uses Materialize) to facilitate and speed up development with the use of a grid system that has built in JS components.",
+		"itag_class": "devicon-bootstrap-plain"
+	}, {
+		"skill": "Angular",
+		"description": "",
+		"itag_class": "devicon-angularjs-plain"
+	}],
+	[{
+		"skill": "Node",
+		"description": "",
+		"itag_class": "devicon-nodejs-plain"
+	}, {
+		"skill": "MongoDB",
+		"description": "",
+		"itag_class": "devicon-mongodb-plain"
+	}, {
+		"skill": "MySQL",
+		"description": "",
+		"itag_class": "devicon-mysql-plain"
+	}],
+	[{
+		"skill": "Git",
+		"description": "I use Git as my version control system, which allows me to create new branches and go back to previous work if necessary.",
+		"itag_class": "devicon-git-plain"
+	}, {
+		"skill": "GitHub",
+		"description": "I use GitHub to save my work online as a backup or if I am working collaboratively on a project.  For more information, please check the link to my profile in the navigation bar dropdown menu.",
+		"itag_class": "devicon-github-plain"
+	}, {
+		"skill": "Heroku",
+		"description": "When I first started studying development, I used FTP to upload files (this site uses FTP).  Since 2015, I have been using the Heroku cloud platform to upload things.",
+		"itag_class": "devicon-heroku-line"
+	}, {
+		"skill": "Trello",
+		"description": "",
+		"itag_class": "devicon-trello-plain"
+	}]
+]
