@@ -12,6 +12,20 @@
     "description": "Bootcamp front end project that allows users to search for a location and find its weather and images, along with a map of the location."
   },
   {
+    "title": "Rutgers Flyers",
+    "year": 2016,
+    "techs": [{
+      "tech": "NodeJS"
+    }, {
+      "tech": "Express"
+    }, {
+      "tech": "MySQL"
+    }, {
+      "tech": "jQuery"
+    }],
+    "description": "Collaborative project that uses the Google Places API to show restaurants, bars, and places to study around the Rutgers campus in New Brunswick, NJ.  This project shows user reviews, hours of operation, and price rating."
+  },
+  {
     "title": "Alex Ly - Web Dev",
     "year": 2016,
     "techs": [{
