@@ -49,5 +49,13 @@
     }],
     "description": "My first site. I created the French Learner's Guide as a learning supplement to assist both students and travelers gain a better understanding of the language.",
     "picture_url": "static/img/projects/frenchlearnersguide.jpg"
+  },
+  {
+    "title": "RPSLS",
+    "year": 2015,
+    "techs": [{
+      "tech": ""
+    }],
+    "description": "Bored? Play Rock, Paper, Scissors, Lizard, Spock!"
   }
 ]
