@@ -9,11 +9,11 @@
 		"itag_class": "devicon-css3-plain"
 	}, {
 		"skill": "JavaScript",
-		"description": "",
+		"description": "I can work with both client side and server side JavaScript.",
 		"itag_class": "devicon-javascript-plain"
 	}, {
 		"skill": "jQuery",
-		"description": "",
+		"description": "I use jQuery for a multitude of purposes, from adding basic DOM functionality to a page to making ajax calls and working with various APIs.  The current site you are one uses jQuery.",
 		"itag_class": "devicon-jquery-plain"
 	}, {
 		"skill": "Sass",
@@ -51,11 +51,11 @@
 		"itag_class": "devicon-github-plain"
 	}, {
 		"skill": "Heroku",
-		"description": "When I first started studying development, I used FTP to upload files (this site uses FTP).  Since 2015, I have been using the Heroku cloud platform to upload things.",
+		"description": "When I first started development, I used FTP to upload files.  More recently, I have been deploying to the Heroku cloud platform.",
 		"itag_class": "devicon-heroku-line"
 	}, {
 		"skill": "Trello",
-		"description": "",
+		"description": "I have used Trello as an organizational tool to list issues and progress on larger projects involving multiple developers.",
 		"itag_class": "devicon-trello-plain"
 	}]
 ]
