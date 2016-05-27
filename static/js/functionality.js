@@ -53,9 +53,22 @@ $(document).ready(function(){
 
   $(document).on('click', '.project', function(){
     // TODO Empty modal
-      // show project data in modal
+    projectModalCreator($(this).data());
+
+    $('#project-modal').openModal();
   	console.log($(this).data());
   });
+
+  function projectModalCreator(data){
+    var modalContent = $('#project-modal').find('.modal-content'),
+    projectTitle = $('<h3>').text(data.title),
+    projectDescription = data.description,
+    projectYear = data.year;
+
+    modalContent.empty();
+    modalContent.append(projectTitle);
+
+  }
 
   // FUNCTIONS CALLED ON LOAD
   projects();
