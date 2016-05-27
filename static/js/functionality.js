@@ -62,11 +62,12 @@ $(document).ready(function(){
   function projectModalCreator(data){
     var modalContent = $('#project-modal').find('.modal-content'),
     projectTitle = $('<h3>').text(data.title),
-    projectDescription = data.description,
-    projectYear = data.year;
+    projectDescription = $('<p>').text(data.description),
+    projectYear = data.year,
+    projectPic = $('<img>').attr('src', data.picture_url).addClass('img-responsive');
 
     modalContent.empty();
-    modalContent.append(projectTitle);
+    modalContent.append(projectTitle).append(projectPic).append(projectDescription);
 
   }
 
