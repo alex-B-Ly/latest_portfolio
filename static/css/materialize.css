@@ -6216,20 +6216,27 @@ body {
   padding: 30px 0 10px 0 !important;
   cursor: pointer; }
 
+#project-modal p {
+  font-size: 1.4em; }
+
 .proj-link-wrap {
-  margin: 20px 0; }
+  margin: 20px 0;
+  padding: 12px 16px; }
 
 .project-site-url,
 .project-code-url {
-  padding: 12px 16px;
-  border: 3px solid #8A0E0E;
-  border-radius: 30px;
-  color: #8A0E0E; }
+  color: #8A0E0E;
+  font-size: 1.3em; }
 
 .project-site-url:hover,
 .project-code-url:hover {
-  border: 3px solid #cf1515;
   color: #cf1515; }
+
+.fa-hand-o-right,
+.fa-code {
+  color: #8A0E0E;
+  font-size: 1.3em;
+  padding-right: 10px; }
 
 /* FOOTER */
 footer {

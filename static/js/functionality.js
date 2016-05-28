@@ -75,14 +75,14 @@ $(document).ready(function(){
       var projectSiteRow = $('<div>').addClass('row');
 
       if(projectUrl){
-        projectSiteCreator(projectUrl, 'Visit the site', 'project-site-url');
+        projectSiteCreator(projectUrl, 'Visit the site', 'project-site-url', 'fa fa-hand-o-right');
       }
 
       if(projectCode){
-        projectSiteCreator(projectCode, 'View the code', 'project-code-url');
+        projectSiteCreator(projectCode, 'View the code', 'project-code-url', 'fa fa-code');
       }
 
-      function projectSiteCreator(projLink, projLinkText, projLinkClass){
+      function projectSiteCreator(projLink, projLinkText, projLinkClass, projLinkITag){
         var projectLink = $('<a>')
           .attr({
             href: projLink,
@@ -90,9 +90,10 @@ $(document).ready(function(){
           })
           .text(projLinkText)
           .addClass(projLinkClass),
+        projectITag = $('<i>').addClass(projLinkITag),
         projectLinkCol = $('<div>').addClass('col s12 l6 center-align proj-link-wrap');
 
-        projectLinkCol.append(projectLink);
+        projectLinkCol.append(projectITag).append(projectLink);
         projectSiteRow.append(projectLinkCol);
       }
 
