@@ -6217,16 +6217,16 @@ body {
   cursor: pointer; }
 
 #project-modal p {
-  font-size: 1.4em; }
+  font-size: 1.6em; }
 
 .proj-link-wrap {
-  margin: 20px 0;
-  padding: 12px 16px; }
+  margin: 8px 0; }
 
 .project-site-url,
 .project-code-url {
   color: #8A0E0E;
-  font-size: 1.3em; }
+  font-size: 1.4em;
+  font-weight: 500; }
 
 .project-site-url:hover,
 .project-code-url:hover {
@@ -6235,7 +6235,7 @@ body {
 .fa-hand-o-right,
 .fa-code {
   color: #8A0E0E;
-  font-size: 1.3em;
+  font-size: 1.4em;
   padding-right: 10px; }
 
 /* FOOTER */
