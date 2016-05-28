@@ -84,11 +84,16 @@ $(document).ready(function(){
       }
 
       function projectSiteCreator(projLink, projLinkText){
-        var projectLink = $('<a>').attr({
-          href: projLink,
-          target: '_blank'
-        }).text(projLinkText);
-        projectSiteRow.append(projectLink);
+        var projectLink = $('<a>')
+          .attr({
+            href: projLink,
+            target: '_blank'
+          })
+          .text(projLinkText),
+        projectLinkCol = $('<div>').addClass('col s12 l6 center-align');
+
+        projectLinkCol.append(projectLink);
+        projectSiteRow.append(projectLinkCol);
       }
 
       modalContent.append(projectSiteRow);
