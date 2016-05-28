@@ -4,6 +4,10 @@ body{
 }
 
 /* ABOUT ME SECTION */
+.alex-pic{
+	border: 6px solid lighten($primary-color, 5%);
+}
+
 #about_me{
 	padding: 75px 0;
 }

@@ -6152,6 +6152,9 @@ body {
   /*background-color: #3E3E3E;*/ }
 
 /* ABOUT ME SECTION */
+.alex-pic {
+  border: 6px solid #a11010; }
+
 #about_me {
   padding: 75px 0; }
 
