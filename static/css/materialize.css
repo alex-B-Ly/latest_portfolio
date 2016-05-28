@@ -6152,6 +6152,9 @@ body {
   /*background-color: #3E3E3E;*/ }
 
 /* ABOUT ME SECTION */
+.alex-pic {
+  border: 6px solid #a11010; }
+
 #about_me {
   padding: 75px 0; }
 
@@ -6212,6 +6215,28 @@ body {
 .project {
   padding: 30px 0 10px 0 !important;
   cursor: pointer; }
+
+#project-modal p {
+  font-size: 1.6em; }
+
+.proj-link-wrap {
+  margin: 8px 0; }
+
+.project-site-url,
+.project-code-url {
+  color: #8A0E0E;
+  font-size: 1.4em;
+  font-weight: 500; }
+
+.project-site-url:hover,
+.project-code-url:hover {
+  color: #cf1515; }
+
+.fa-hand-o-right,
+.fa-code {
+  color: #8A0E0E;
+  font-size: 1.4em;
+  padding-right: 10px; }
 
 /* FOOTER */
 footer {

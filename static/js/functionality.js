@@ -52,7 +52,6 @@ $(document).ready(function(){
   }
 
   $(document).on('click', '.project', function(){
-    // TODO Empty modal
     projectModalCreator($(this).data());
 
     $('#project-modal').openModal();
@@ -76,19 +75,26 @@ $(document).ready(function(){
       var projectSiteRow = $('<div>').addClass('row');
 
       if(projectUrl){
-        projectSiteCreator(projectUrl, 'Visit the site');
+        projectSiteCreator(projectUrl, 'Visit the site', 'project-site-url', 'fa fa-hand-o-right');
       }
 
       if(projectCode){
-        projectSiteCreator(projectCode, 'View the code');
+        projectSiteCreator(projectCode, 'View the code', 'project-code-url', 'fa fa-code');
       }
 
-      function projectSiteCreator(projLink, projLinkText){
-        var projectLink = $('<a>').attr({
-          href: projLink,
-          target: '_blank'
-        }).text(projLinkText);
-        projectSiteRow.append(projectLink);
+      function projectSiteCreator(projLink, projLinkText, projLinkClass, projLinkITag){
+        var projectLink = $('<a>')
+          .attr({
+            href: projLink,
+            target: '_blank'
+          })
+          .text(projLinkText)
+          .addClass(projLinkClass),
+        projectITag = $('<i>').addClass(projLinkITag),
+        projectLinkCol = $('<div>').addClass('col s12 l6 center-align proj-link-wrap');
+
+        projectLinkCol.append(projectITag).append(projectLink);
+        projectSiteRow.append(projectLinkCol);
       }
 
       modalContent.append(projectSiteRow);
