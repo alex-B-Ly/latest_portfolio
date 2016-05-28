@@ -52,7 +52,6 @@ $(document).ready(function(){
   }
 
   $(document).on('click', '.project', function(){
-    // TODO Empty modal
     projectModalCreator($(this).data());
 
     $('#project-modal').openModal();
@@ -76,21 +75,22 @@ $(document).ready(function(){
       var projectSiteRow = $('<div>').addClass('row');
 
       if(projectUrl){
-        projectSiteCreator(projectUrl, 'Visit the site');
+        projectSiteCreator(projectUrl, 'Visit the site', 'project-site-url');
       }
 
       if(projectCode){
-        projectSiteCreator(projectCode, 'View the code');
+        projectSiteCreator(projectCode, 'View the code', 'project-code-url');
       }
 
-      function projectSiteCreator(projLink, projLinkText){
+      function projectSiteCreator(projLink, projLinkText, projLinkClass){
         var projectLink = $('<a>')
           .attr({
             href: projLink,
             target: '_blank'
           })
-          .text(projLinkText),
-        projectLinkCol = $('<div>').addClass('col s12 l6 center-align');
+          .text(projLinkText)
+          .addClass(projLinkClass),
+        projectLinkCol = $('<div>').addClass('col s12 l6 center-align proj-link-wrap');
 
         projectLinkCol.append(projectLink);
         projectSiteRow.append(projectLinkCol);

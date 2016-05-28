@@ -6216,6 +6216,21 @@ body {
   padding: 30px 0 10px 0 !important;
   cursor: pointer; }
 
+.proj-link-wrap {
+  margin: 20px 0; }
+
+.project-site-url,
+.project-code-url {
+  padding: 12px 16px;
+  border: 3px solid #8A0E0E;
+  border-radius: 30px;
+  color: #8A0E0E; }
+
+.project-site-url:hover,
+.project-code-url:hover {
+  border: 3px solid #cf1515;
+  color: #cf1515; }
+
 /* FOOTER */
 footer {
   background: #8A0E0E;
