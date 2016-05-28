@@ -13,7 +13,7 @@
 		"itag_class": "devicon-javascript-plain"
 	}, {
 		"skill": "jQuery",
-		"description": "I use jQuery for a multitude of purposes, from adding basic DOM functionality to a page to making ajax calls and working with various APIs.  The current site you are one uses jQuery.",
+		"description": "I use jQuery for a multitude of purposes, from adding basic DOM functionality to a page to making ajax calls and working with various APIs.  The current site you are on uses jQuery.",
 		"itag_class": "devicon-jquery-plain"
 	}, {
 		"skill": "Sass",
