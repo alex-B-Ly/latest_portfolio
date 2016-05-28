@@ -64,10 +64,35 @@ $(document).ready(function(){
     projectTitle = $('<h3>').text(data.title),
     projectDescription = $('<p>').text(data.description),
     projectYear = data.year,
-    projectPic = $('<img>').attr('src', data.picture_url).addClass('img-responsive');
+    projectPic = $('<img>').attr('src', data.picture_url).addClass('img-responsive'),
+    projectUrl = data.project_url,
+    projectCode = data.project_code;
 
     modalContent.empty();
     modalContent.append(projectTitle).append(projectPic).append(projectDescription);
+
+    // Project site and code
+    if( projectUrl || projectCode){
+      var projectSiteRow = $('<div>').addClass('row');
+
+      if(projectUrl){
+        projectSiteCreator(projectUrl, 'Visit the site');
+      }
+
+      if(projectCode){
+        projectSiteCreator(projectCode, 'View the code');
+      }
+
+      function projectSiteCreator(projLink, projLinkText){
+        var projectLink = $('<a>').attr({
+          href: projLink,
+          target: '_blank'
+        }).text(projLinkText);
+        projectSiteRow.append(projectLink);
+      }
+
+      modalContent.append(projectSiteRow);
+    }
 
   }
 

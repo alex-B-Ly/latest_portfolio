@@ -35,7 +35,9 @@
     }, {
       "tech": "Sass"
     }],
-    "description": "The site you are currently on."
+    "description": "The site you are currently on.",
+    "project_url": "http://www.alexly-webdev.com",
+    "project_code": "https://github.com/alex-B-Ly/latest_portfolio"
   },
   {
     "title": "French Learner's Guide",
@@ -48,7 +50,8 @@
       "tech": "Sass"
     }],
     "description": "My first site. I created the French Learner's Guide as a learning supplement to assist both students and travelers gain a better understanding of the language.",
-    "picture_url": "static/img/projects/frenchlearnersguide.jpg"
+    "picture_url": "static/img/projects/frenchlearnersguide.jpg",
+    "project_url": "http://www.frenchlearnersguide.com"
   },
   {
     "title": "RPSLS",
