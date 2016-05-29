@@ -9,7 +9,9 @@
     }, {
       "tech": "RESTful APIs"
     }],
-    "description": "Bootcamp front end project that allows users to search for a location and find its weather and images, along with a map of the location."
+    "description": "Bootcamp front end project that allows users to search for a location and find its weather and images, along with a map of the location.",
+    "project_url": "http://vast-meadow-1872.herokuapp.com/",
+    "project_code": "https://github.com/alex-B-Ly/Mountain"
   },
   {
     "title": "Rutgers Flyers",
@@ -23,7 +25,9 @@
     }, {
       "tech": "jQuery"
     }],
-    "description": "Collaborative project that uses the Google Places API to show restaurants, bars, and places to study around the Rutgers campus in New Brunswick, NJ.  This project shows user reviews, hours of operation, and price rating."
+    "description": "Collaborative project that uses the Google Places API to show restaurants, bars, and places to study around the Rutgers campus in New Brunswick, NJ.  This project shows user reviews, hours of operation, and price rating.",
+    "project_url": "http://rutgers-flyers.herokuapp.com/",
+    "project_code": "https://github.com/alex-B-Ly/Rutgers-flyers"
   },
   {
     "title": "Alex Ly - Web Dev",
@@ -59,6 +63,7 @@
     "techs": [{
       "tech": ""
     }],
-    "description": "Bored? Play a few rounds of Rock, Paper, Scissors, Lizard, Spock!"
+    "description": "Bored? Play a few rounds of Rock, Paper, Scissors, Lizard, Spock!",
+    "project_code": "https://github.com/alex-B-Ly/RPS-game"
   }
 ]
