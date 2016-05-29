@@ -3,6 +3,29 @@ body{
 	/*background-color: #3E3E3E;*/
 }
 
+/* HEADER */
+.header-image{
+	background: #000;
+}
+
+.title-wrap{
+	margin: 0 auto;
+}
+
+.header-image h1,
+.header-image p{
+	color: #fff;
+}
+
+.header-image h1{
+	font-size: 6.5em;
+}
+
+.header-image p{
+	font-size: 3em;
+	margin-top: 20px;
+}
+
 /* ABOUT ME SECTION */
 .alex-pic{
 	border: 6px solid lighten($primary-color, 5%);
