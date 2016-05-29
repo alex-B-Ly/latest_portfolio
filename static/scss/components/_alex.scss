@@ -1,6 +1,31 @@
 body{
 	background-color: #F5F5F5;
-	/*background-color: #3E3E3E;*/
+}
+
+/* HEADER */
+.header-image{
+	background: #000;
+	background-size: cover;
+}
+
+.title-wrap{
+	margin: 0 auto;
+	width:50%;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.header-image h1,
+.header-image p{
+	color: #fff;
+}
+
+.header-image h1{
+	font-size: 6.5em;
+}
+
+.header-image p{
+	font-size: 3em;
+	margin-top: 20px;
 }
 
 /* ABOUT ME SECTION */
@@ -72,7 +97,7 @@ body{
 }
 
 .skill-modal-description{
-	font-size: 1.3em;
+	font-size: 1.5em;
 }
 
 /* PROJECTS SECTION */

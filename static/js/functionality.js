@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  
+
   // Materialize Side Nav
   $(".button-collapse").sideNav({
     closeOnClick: true
@@ -10,6 +10,9 @@ $(document).ready(function(){
 
   // Materialize Modal
   $('.modal-trigger').leanModal();
+
+  // HEADER IMAGE FUNCTIONALITY
+  $('.header-image').css('height', window.innerHeight);
 
   // Skills
   $('.skill-trigger').on('click', function(){
