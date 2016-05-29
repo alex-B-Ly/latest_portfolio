@@ -1,15 +1,17 @@
 body{
 	background-color: #F5F5F5;
-	/*background-color: #3E3E3E;*/
 }
 
 /* HEADER */
 .header-image{
 	background: #000;
+	background-size: cover;
 }
 
 .title-wrap{
 	margin: 0 auto;
+	width:50%;
+	background: rgba(0, 0, 0, 0.8);
 }
 
 .header-image h1,
