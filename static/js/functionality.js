@@ -24,7 +24,7 @@ $(document).ready(function(){
   var typeWriting = new TypeWriting({
     targetElement: document.getElementsByClassName('whoami')[0],
     inputString: 'whoami',
-    typing_interval: 160,
+    typing_interval: 190,
     blink_interval: '1.6s',
     cursor_color: '#000'
   })
