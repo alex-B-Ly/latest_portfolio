@@ -13,21 +13,34 @@ $(document).ready(function(){
   // Materialize Modal
   $('.modal-trigger').leanModal();
 
-  // HEADER IMAGE FUNCTIONALITY
-  $('.header-image').css('height', window.innerHeight);
-
   // END MATERIALIZE
 
-  // About Me section
+  // HEADER IMAGE FUNCTIONALITY
+    // height fallback for certain browser...
+  function headerSizer(){
+    $('.header-image').height(window.innerHeight);
+  }
 
-    // Typewriting JS plugin
-  var typeWriting = new TypeWriting({
-    targetElement: document.getElementsByClassName('whoami')[0],
-    inputString: 'whoami',
-    typing_interval: 190,
-    blink_interval: '1.6s',
-    cursor_color: '#000'
-  })
+  $(window).resize(headerSizer);
+  // About Me section
+    // SCROLLTOP FUNCTIONALITY
+  function eventFire(){
+    
+    function whoamiCreator(){
+      if($(window).scrollTop() >= $('#about_me').position().top - 125){
+        var typeWriting = new TypeWriting({
+          targetElement: document.getElementsByClassName('whoami')[0],
+          inputString: 'whoami',
+          typing_interval: 190,
+          blink_interval: '1.6s',
+          cursor_color: '#000'
+        });
+        $(document).off('scroll', whoamiCreator);
+      }
+    }
+
+    $(document).on('scroll', whoamiCreator);
+  }
 
   // Skills section
   $('.skill-trigger').on('click', function(){
@@ -49,7 +62,6 @@ $(document).ready(function(){
       $('#skill-modal-itag').removeClass().addClass(skillChosen.itag_class);
       $('.skill-modal-description').text(skillChosen.description);
     }
-
   });
 
   // Portfolio section
@@ -149,6 +161,8 @@ $(document).ready(function(){
   }
 
   // FUNCTIONS CALLED ON LOAD
+  eventFire();
+  headerSizer();
   projects();
 
 });
