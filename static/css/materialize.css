@@ -6178,6 +6178,14 @@ body {
 #about_me {
   padding: 75px 0; }
 
+#about_me h2 {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  font-size: 3em; }
+
+#about_me span {
+  font-size: 2.6em; }
+
 #about_me p {
   font-size: 1.5em; }
 
@@ -6264,5 +6272,41 @@ footer {
   position: absolute;
   width: 100%;
   color: #fff; }
+
+/* TYPEWRITING JS PLUGIN */
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.whoami.typingCursor::after {
+  content: "";
+  width: 17px;
+  height: 33px;
+  margin-left: 12px;
+  display: inline-block;
+  vertical-align: bottom;
+  background-color: black;
+  position: relative;
+  bottom: 15px;
+  -webkit-animation: blink 1.6s infinite;
+  -moz-animation: blink 1.6s infinite;
+  animation: blink 1.6s infinite; }
 
 /*# sourceMappingURL=materialize.css.map */
