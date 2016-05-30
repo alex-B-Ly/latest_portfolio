@@ -24,7 +24,7 @@ $(document).ready(function(){
   var typeWriting = new TypeWriting({
     targetElement: document.getElementsByClassName('whoami')[0],
     inputString: 'whoami',
-    typing_interval: 160,
+    typing_interval: 190,
     blink_interval: '1.6s',
     cursor_color: '#000'
   })
@@ -80,15 +80,40 @@ $(document).ready(function(){
 
   function projectModalCreator(data){
     var modalContent = $('#project-modal').find('.modal-content'),
+    projectDescTitle = $('<h4>').text('Description'),
+    projectTechTitle = $('<h4>').text('Tech Used'),
     projectTitle = $('<h3>').text(data.title),
     projectDescription = $('<p>').text(data.description),
+    projectTechs = data.techs,
     projectYear = data.year,
     projectPic = $('<img>').attr('src', data.picture_url).addClass('img-responsive'),
     projectUrl = data.project_url,
     projectCode = data.project_code;
 
+    // Tech create
+    function techCreator(techArr){
+      var techDesc = techArr.map(function(index, elem) {
+        if(elem === 0){
+          return index.tech;
+        }else{
+          return ' ' + index.tech;
+        }
+      }),
+      techDescString = techDesc.toString();
+      techParagraph = $('<p>').addClass('project-modal-techs').text(techDescString);
+      return techParagraph;
+    }
+
+    var techs = techCreator(projectTechs);
+
+    // Empty modal and append all the info
     modalContent.empty();
-    modalContent.append(projectTitle).append(projectPic).append(projectDescription);
+    modalContent.append(projectTitle)
+      .append(projectPic)
+      .append(projectTechTitle)
+      .append(techs)
+      .append(projectDescTitle)
+      .append(projectDescription);
 
     // Project site and code links in modal
     if( projectUrl || projectCode){
@@ -102,6 +127,7 @@ $(document).ready(function(){
         projectSiteCreator(projectCode, 'View the code', 'project-code-url', 'fa fa-code');
       }
 
+      // Create site and code links
       function projectSiteCreator(projLink, projLinkText, projLinkClass, projLinkITag){
         var projectLink = $('<a>')
           .attr({
