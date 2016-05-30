@@ -6178,6 +6178,13 @@ body {
 #about_me {
   padding: 75px 0; }
 
+#about_me h2 {
+  display: inline-block;
+  margin-right: 20px; }
+
+#about_me span {
+  font-size: 2.6em; }
+
 #about_me p {
   font-size: 1.5em; }
 
@@ -6264,5 +6271,39 @@ footer {
   position: absolute;
   width: 100%;
   color: #fff; }
+
+/* TYPEWRITING JS PLUGIN */
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.typingCursor::after {
+  content: "";
+  width: 10px;
+  height: 37px;
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: bottom;
+  background-color: black;
+  -webkit-animation: blink .7s infinite;
+  -moz-animation: blink .7s infinite;
+  animation: blink .7s infinite; }
 
 /*# sourceMappingURL=materialize.css.map */
