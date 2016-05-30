@@ -6206,6 +6206,19 @@ body {
   ========================================================*/
   color: #fff; }
 
+.fa-hand-pointer-o,
+.skills-click-p,
+.projects-click-p {
+  display: inline-block; }
+
+.skills-click-p,
+.projects-click-p {
+  font-size: 1.4em; }
+
+.fa-hand-pointer-o {
+  margin-right: 12px;
+  font-size: 2.2em; }
+
 .front-end-list,
 .back-end-list,
 .tools-list {
