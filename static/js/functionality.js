@@ -23,15 +23,24 @@ $(document).ready(function(){
 
   $(window).resize(headerSizer);
   // About Me section
+    // SCROLLTOP FUNCTIONALITY
+  function eventFire(){
+    
+    function whoamiCreator(){
+      if($(window).scrollTop() >= $('#about_me').position().top - 125){
+        var typeWriting = new TypeWriting({
+          targetElement: document.getElementsByClassName('whoami')[0],
+          inputString: 'whoami',
+          typing_interval: 190,
+          blink_interval: '1.6s',
+          cursor_color: '#000'
+        });
+        $(document).off('scroll', whoamiCreator);
+      }
+    }
 
-    // Typewriting JS plugin
-  var typeWriting = new TypeWriting({
-    targetElement: document.getElementsByClassName('whoami')[0],
-    inputString: 'whoami',
-    typing_interval: 190,
-    blink_interval: '1.6s',
-    cursor_color: '#000'
-  })
+    $(document).on('scroll', whoamiCreator);
+  }
 
   // Skills section
   $('.skill-trigger').on('click', function(){
@@ -152,6 +161,7 @@ $(document).ready(function(){
   }
 
   // FUNCTIONS CALLED ON LOAD
+  eventFire();
   headerSizer();
   projects();
 
