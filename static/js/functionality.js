@@ -18,6 +18,17 @@ $(document).ready(function(){
 
   // END MATERIALIZE
 
+  // About Me section
+
+    // Typewriting JS plugin
+  var typeWriting = new TypeWriting({
+    targetElement: document.getElementsByClassName('whoami')[0],
+    inputString: 'whoami',
+    typing_interval: 160,
+    blink_interval: '1.6s',
+    cursor_color: '#000'
+  })
+
   // Skills section
   $('.skill-trigger').on('click', function(){
     var skillType = $(this).attr('data-skill-type');

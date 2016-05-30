@@ -39,7 +39,8 @@ body{
 
 #about_me h2{
 	display:inline-block;
-	margin-right: 20px;
+	margin: 0 20px 0 0;
+	font-size: 3em;
 }
 
 #about_me span{
@@ -187,16 +188,18 @@ footer{
 	}
 }
 
-.typingCursor::after {
+.whoami.typingCursor::after {
 	content: "";
-	width: 10px;
-	height: 37px;
-	margin-left: 5px;
+	width: 17px;
+	height: 33px;
+	margin-left: 12px;
 	display: inline-block;
 	vertical-align: bottom;
 	background-color: black;
+	position: relative;
+	bottom: 15px;
 
-	-webkit-animation: blink .7s infinite;
-	   -moz-animation: blink .7s infinite;
-			animation: blink .7s infinite;
+	-webkit-animation: blink 1.6s infinite;
+	   -moz-animation: blink 1.6s infinite;
+			animation: blink 1.6s infinite;
 }
