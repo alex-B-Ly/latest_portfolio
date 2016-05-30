@@ -13,11 +13,15 @@ $(document).ready(function(){
   // Materialize Modal
   $('.modal-trigger').leanModal();
 
-  // HEADER IMAGE FUNCTIONALITY
-  $('.header-image').css('height', window.innerHeight);
-
   // END MATERIALIZE
 
+  // HEADER IMAGE FUNCTIONALITY
+    // height fallback for certain browser...
+  function headerSizer(){
+    $('.header-image').height(window.innerHeight);
+  }
+
+  $(window).resize(headerSizer);
   // About Me section
 
     // Typewriting JS plugin
@@ -49,7 +53,6 @@ $(document).ready(function(){
       $('#skill-modal-itag').removeClass().addClass(skillChosen.itag_class);
       $('.skill-modal-description').text(skillChosen.description);
     }
-
   });
 
   // Portfolio section
@@ -149,6 +152,7 @@ $(document).ready(function(){
   }
 
   // FUNCTIONS CALLED ON LOAD
+  headerSizer();
   projects();
 
 });
