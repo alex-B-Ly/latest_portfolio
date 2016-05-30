@@ -30,11 +30,11 @@
 	}],
 	[{
 		"skill": "Node",
-		"description": "",
+		"description": "I have been using NodeJS for server side development.  I can use a variety of middleware, including Express for setup such as routing, and passport for user authentication.",
 		"itag_class": "devicon-nodejs-plain"
 	}, {
 		"skill": "MongoDB",
-		"description": "",
+		"description": "I have used MongoDB for multiple projects.  I enjoy working with its JSON-like structure.",
 		"itag_class": "devicon-mongodb-plain"
 	}, {
 		"skill": "MySQL",

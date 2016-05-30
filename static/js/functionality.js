@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  // MATERIALIZE FUNCTIONALITY
+
   // Materialize Side Nav
   $(".button-collapse").sideNav({
     closeOnClick: true
@@ -14,7 +16,9 @@ $(document).ready(function(){
   // HEADER IMAGE FUNCTIONALITY
   $('.header-image').css('height', window.innerHeight);
 
-  // Skills
+  // END MATERIALIZE
+
+  // Skills section
   $('.skill-trigger').on('click', function(){
     var skillType = $(this).attr('data-skill-type');
     var skillName = $(this).attr('data-skill-name');
@@ -37,7 +41,9 @@ $(document).ready(function(){
 
   });
 
-  // Portfolio
+  // Portfolio section
+
+    // Gets project JSON and creates cards on load.
   function projects(){
   	$.getJSON('http://localhost/sites/latest_portfolio/static/js/info/projects.json', function(data){
   		$(data).each(function(i, val){
@@ -54,11 +60,11 @@ $(document).ready(function(){
   	}
   }
 
+    // Project modal functionality
   $(document).on('click', '.project', function(){
     projectModalCreator($(this).data());
 
     $('#project-modal').openModal();
-  	console.log($(this).data());
   });
 
   function projectModalCreator(data){
@@ -73,7 +79,7 @@ $(document).ready(function(){
     modalContent.empty();
     modalContent.append(projectTitle).append(projectPic).append(projectDescription);
 
-    // Project site and code
+    // Project site and code links in modal
     if( projectUrl || projectCode){
       var projectSiteRow = $('<div>').addClass('row');
 
