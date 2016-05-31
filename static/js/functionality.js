@@ -177,9 +177,7 @@ $(document).ready(function(){
 
     // Scroll event binding
     scroller('#about_me', 125, whoamiCreator);
-    
   }
-
 
 // FUNCTIONS CALLED ON LOAD
   scrollEventFire();

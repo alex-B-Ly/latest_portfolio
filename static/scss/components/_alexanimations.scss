@@ -1,0 +1,12 @@
+/* Skills glow */
+@include keyframes(glowskills) {
+	0% { box-shadow: 0 0 10px $skills-box-shadow; }
+	// 25% { box-shadow: 0 0 20px $skills-box-shadow; }
+	50% { box-shadow: 0 0 50px #fff; }
+	// 75% { box-shadow: 0 0 20px $skills-box-shadow; }
+	100% { box-shadow: 0 0 10px $skills-box-shadow; }
+}
+
+.skills-glow{
+	animation: glowskills 1s 1s 1;
+}

@@ -6147,6 +6147,38 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 @media (min-height: 40.125em) {
   .picker--time .picker__box {
     margin-bottom: 5em; } }
+/* Skills glow */
+@-webkit-keyframes glowskills {
+  0% {
+    box-shadow: 0 0 10px #550000; }
+  50% {
+    box-shadow: 0 0 50px #fff; }
+  100% {
+    box-shadow: 0 0 10px #550000; } }
+@-moz-keyframes glowskills {
+  0% {
+    box-shadow: 0 0 10px #550000; }
+  50% {
+    box-shadow: 0 0 50px #fff; }
+  100% {
+    box-shadow: 0 0 10px #550000; } }
+@-o-keyframes glowskills {
+  0% {
+    box-shadow: 0 0 10px #550000; }
+  50% {
+    box-shadow: 0 0 50px #fff; }
+  100% {
+    box-shadow: 0 0 10px #550000; } }
+@keyframes glowskills {
+  0% {
+    box-shadow: 0 0 10px #550000; }
+  50% {
+    box-shadow: 0 0 50px #fff; }
+  100% {
+    box-shadow: 0 0 10px #550000; } }
+.skills-glow {
+  animation: glowskills 1s 1s 1; }
+
 body {
   background-color: #F5F5F5; }
 

@@ -74,7 +74,7 @@ body{
 		 This pattern is downloaded from www.subtlepatterns.com 
 		 If you need more, that's where to get'em.
 		========================================================*/
-	color: #fff;
+	color: $skills-color;
 }
 
 .fa-hand-pointer-o,
@@ -105,7 +105,7 @@ body{
 	display: inline-block;
 	margin: 20px 10px;
 	background: rgba(0,0,0, 0.5);
-	box-shadow: 0 0 10px #550000;
+	box-shadow: 0 0 10px $skills-box-shadow;
 	transition: box-shadow 1.2s;
 	cursor: pointer;
 }
@@ -113,7 +113,7 @@ body{
 .front-end-list > li:hover,
 .back-end-list > li:hover,
 .tools-list > li:hover{
-	box-shadow: 0 0 40px #0B6E0B;
+	box-shadow: 0 0 40px $skills-box-shadow-hover;
 }
 
 .skill-trigger{
@@ -177,57 +177,4 @@ footer{
 	position: absolute;
 	width: 100%;
 	color: #fff;
-}
-
-/* TYPEWRITING JS PLUGIN */
-@-webkit-keyframes blink {
-	0% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@-moz-keyframes blink {
-	0% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes blink {
-	0% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-.whoami.typingCursor::after {
-	content: "";
-	width: 17px;
-	height: 33px;
-	margin-left: 12px;
-	display: inline-block;
-	vertical-align: bottom;
-	background-color: black;
-	position: relative;
-	bottom: 15px;
-
-	-webkit-animation: blink 1.6s infinite;
-	   -moz-animation: blink 1.6s infinite;
-			animation: blink 1.6s infinite;
 }
