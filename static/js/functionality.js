@@ -26,26 +26,8 @@ $(document).ready(function(){
 
 
 // About Me section
-    // SCROLLTOP FUNCTIONALITY
-      // MOVE SCROLLTOP TO BOTTOM OF PAGE
-  function scrollEventFire(){
-  
-    function scroller(elem, posChosen, test){
-      // var tester = test;
 
-      function scrollEvent(){
-        if($(window).scrollTop() >= $(elem).position().top - posChosen){
-          test();
-          $(document).off('scroll', scrollEvent);
-        }
-      }
-    
-      $(document).on('scroll', scrollEvent);
-    }
-
-    scroller('#about_me', 125, whoamiCreator);   
-  }
-
+  // SCROLL EVENT
   function whoamiCreator(){
     var typeWriting = new TypeWriting({
       targetElement: document.getElementsByClassName('whoami')[0],
@@ -176,7 +158,30 @@ $(document).ready(function(){
 
   }
 
-  // FUNCTIONS CALLED ON LOAD
+
+// SCROLLTOP FUNCTIONALITY
+  // Note for future self: This function calls the scroller inner function, with target element, position from top of target elem for when the callback should fire, and the callback
+  function scrollEventFire(){
+  
+    function scroller(elem, posChosen, callback){
+
+      function scrollEvent(){
+        if($(window).scrollTop() >= $(elem).position().top - posChosen){
+          callback();
+          $(document).off('scroll', scrollEvent);
+        }
+      }
+    
+      $(document).on('scroll', scrollEvent);
+    }
+
+    // Scroll event binding
+    scroller('#about_me', 125, whoamiCreator);
+    
+  }
+
+
+// FUNCTIONS CALLED ON LOAD
   scrollEventFire();
   headerSizer();
   projects();
