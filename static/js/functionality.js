@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  // MATERIALIZE FUNCTIONALITY
+ // MATERIALIZE FUNCTIONALITY
 
   // Materialize Side Nav
   $(".button-collapse").sideNav({
@@ -15,16 +15,19 @@ $(document).ready(function(){
 
   // END MATERIALIZE
 
-  // HEADER IMAGE FUNCTIONALITY
+
+// HEADER IMAGE FUNCTIONALITY
     // height fallback for certain browser...
   function headerSizer(){
     $('.header-image').height(window.innerHeight);
   }
 
   $(window).resize(headerSizer);
-  // About Me section
+
+
+// About Me section
     // SCROLLTOP FUNCTIONALITY
-  function eventFire(){
+  function scrollEventFire(){
     
     function whoamiCreator(){
       if($(window).scrollTop() >= $('#about_me').position().top - 125){
@@ -42,7 +45,8 @@ $(document).ready(function(){
     $(document).on('scroll', whoamiCreator);
   }
 
-  // Skills section
+
+// Skills section
   $('.skill-trigger').on('click', function(){
     var skillType = $(this).attr('data-skill-type');
     var skillName = $(this).attr('data-skill-name');
@@ -64,7 +68,8 @@ $(document).ready(function(){
     }
   });
 
-  // Portfolio section
+
+// Portfolio section
 
     // Gets project JSON and creates cards on load.
   function projects(){
@@ -102,7 +107,7 @@ $(document).ready(function(){
     projectUrl = data.project_url,
     projectCode = data.project_code;
 
-    // Tech create
+    // Modal tech create
     function techCreator(techArr){
       var techDesc = techArr.map(function(index, elem) {
         if(elem === 0){
@@ -161,7 +166,7 @@ $(document).ready(function(){
   }
 
   // FUNCTIONS CALLED ON LOAD
-  eventFire();
+  scrollEventFire();
   headerSizer();
   projects();
 
