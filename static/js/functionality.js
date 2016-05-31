@@ -27,22 +27,33 @@ $(document).ready(function(){
 
 // About Me section
     // SCROLLTOP FUNCTIONALITY
+      // MOVE SCROLLTOP TO BOTTOM OF PAGE
   function scrollEventFire(){
-    
-    function whoamiCreator(){
-      if($(window).scrollTop() >= $('#about_me').position().top - 125){
-        var typeWriting = new TypeWriting({
-          targetElement: document.getElementsByClassName('whoami')[0],
-          inputString: 'whoami',
-          typing_interval: 190,
-          blink_interval: '1.6s',
-          cursor_color: '#000'
-        });
-        $(document).off('scroll', whoamiCreator);
+  
+    function scroller(elem, posChosen, test){
+      // var tester = test;
+
+      function scrollEvent(){
+        if($(window).scrollTop() >= $(elem).position().top - posChosen){
+          test();
+          $(document).off('scroll', scrollEvent);
+        }
       }
+    
+      $(document).on('scroll', scrollEvent);
     }
 
-    $(document).on('scroll', whoamiCreator);
+    scroller('#about_me', 125, whoamiCreator);   
+  }
+
+  function whoamiCreator(){
+    var typeWriting = new TypeWriting({
+      targetElement: document.getElementsByClassName('whoami')[0],
+      inputString: 'whoami',
+      typing_interval: 190,
+      blink_interval: '1.6s',
+      cursor_color: '#000'
+    });
   }
 
 
