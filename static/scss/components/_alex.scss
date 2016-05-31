@@ -2,6 +2,13 @@ body{
 	background-color: #F5F5F5;
 }
 
+/* SHARED */
+#skills h2,
+#projects h2,
+#contact h2{
+	font-size: 4.5em;
+}
+
 /* HEADER */
 .header-image{
 	background: #000;
@@ -60,7 +67,7 @@ body{
 }
 
 #skills{
-	padding: 75px 0;
+	padding: 50px 0;
 	background-color: #2F2F2F;
 	background: url("../img/patterns/congruent_outline.png");
 		/*========================================================
