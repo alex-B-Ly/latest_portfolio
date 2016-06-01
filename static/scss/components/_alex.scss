@@ -146,10 +146,12 @@ body{
 
 #project-modal h4{
 	margin: 20px 0 10px 0;
+	font-size:2em;
+	font-weight: 500;
 }
 
 #project-modal p{
-	font-size: 1.6em;
+	font-size: 1.4em;
 }
 
 .proj-link-wrap{
@@ -177,7 +179,7 @@ body{
 
 /* CONTACT SECTION */
 #contact{
-	background: darken($body-color, 5%);
+	background: darken($body-color, 6%);
 	margin-bottom: 0;
 	padding: 50px 0;
 }

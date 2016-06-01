@@ -111,9 +111,9 @@ $(document).ready(function(){
     function techCreator(techArr){
       var techDesc = techArr.map(function(index, elem) {
         if(elem === 0){
-          return index.tech;
+          return index;
         }else{
-          return ' ' + index.tech;
+          return ' ' + index;
         }
       }),
       techDescString = techDesc.toString();

@@ -6300,10 +6300,12 @@ body {
   cursor: pointer; }
 
 #project-modal h4 {
-  margin: 20px 0 10px 0; }
+  margin: 20px 0 10px 0;
+  font-size: 2em;
+  font-weight: 500; }
 
 #project-modal p {
-  font-size: 1.6em; }
+  font-size: 1.4em; }
 
 .proj-link-wrap {
   margin: 8px 0; }
@@ -6326,7 +6328,7 @@ body {
 
 /* CONTACT SECTION */
 #contact {
-  background: #e8e8e8;
+  background: #e6e6e6;
   margin-bottom: 0;
   padding: 50px 0; }
 
