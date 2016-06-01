@@ -6299,6 +6299,9 @@ body {
   padding: 30px 0 10px 0 !important;
   cursor: pointer; }
 
+.project h4 {
+  font-weight: 500; }
+
 .project img {
   box-shadow: 2px -2px 8px #000; }
 
@@ -6306,6 +6309,9 @@ body {
   margin: 20px 0 10px 0;
   font-size: 2em;
   font-weight: 500; }
+
+#project-modal img {
+  border: 3px ridge #8A0E0E; }
 
 #project-modal p {
   font-size: 1.4em; }

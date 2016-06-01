@@ -144,6 +144,10 @@ body{
 	cursor: pointer;
 }
 
+.project h4{
+	font-weight: 500;
+}
+
 .project img{
 	box-shadow: 2px -2px 8px #000;
 }
@@ -152,6 +156,10 @@ body{
 	margin: 20px 0 10px 0;
 	font-size:2em;
 	font-weight: 500;
+}
+
+#project-modal img{
+	border: 3px ridge $primary-color;
 }
 
 #project-modal p{

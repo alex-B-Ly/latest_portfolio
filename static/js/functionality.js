@@ -80,10 +80,14 @@ $(document).ready(function(){
   	});
 
   	function projectCreator(project){
-  		var newProject = $('<div>').addClass('col s10 offset-s1 l6 card-panel hoverable center-align project').data(project);
-  		var title = $('<h4>').text(project.title);
-  		var pic = $('<img>').addClass('responsive-img').attr('src', project.picture_url);
-  		newProject.append(pic).append(title);
+  		var newProject = $('<div>').addClass('col s10 offset-s1 l6 card-panel hoverable center-align project').data(project),
+      titleRow = $('<div>').addClass('col s12'),
+  		title = $('<h4>').text(project.title),
+      picRow = $('<div>').addClass('col s12'),
+  		pic = $('<img>').addClass('responsive-img').attr('src', project.picture_url);
+      titleRow.append(title);
+      picRow.append(pic);
+  		newProject.append(picRow).append(titleRow);
   		$('#portfolio').append(newProject);
   	}
   }
@@ -201,6 +205,7 @@ $(document).ready(function(){
 
     // Scroll event binding
     scroller('#about_me', 125, whoamiCreator);
+    // scroller('.front-end-list', 200, skillGlow);
   }
 
 // FUNCTIONS CALLED ON LOAD
