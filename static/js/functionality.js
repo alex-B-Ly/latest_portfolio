@@ -17,7 +17,7 @@ $(document).ready(function(){
 
 
 // HEADER IMAGE FUNCTIONALITY
-    // height fallback for certain browser...
+    // height fallback.
   function headerSizer(){
     $('.header-image').height(window.innerHeight);
   }
