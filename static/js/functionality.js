@@ -17,7 +17,7 @@ $(document).ready(function(){
 
 
 // HEADER IMAGE FUNCTIONALITY
-    // height fallback for certain browser...
+    // height fallback.
   function headerSizer(){
     $('.header-image').height(window.innerHeight);
   }
@@ -26,23 +26,16 @@ $(document).ready(function(){
 
 
 // About Me section
-    // SCROLLTOP FUNCTIONALITY
-  function scrollEventFire(){
-    
-    function whoamiCreator(){
-      if($(window).scrollTop() >= $('#about_me').position().top - 125){
-        var typeWriting = new TypeWriting({
-          targetElement: document.getElementsByClassName('whoami')[0],
-          inputString: 'whoami',
-          typing_interval: 190,
-          blink_interval: '1.6s',
-          cursor_color: '#000'
-        });
-        $(document).off('scroll', whoamiCreator);
-      }
-    }
 
-    $(document).on('scroll', whoamiCreator);
+  // SCROLL EVENT: whoami
+  function whoamiCreator(){
+    var typeWriting = new TypeWriting({
+      targetElement: document.getElementsByClassName('whoami')[0],
+      inputString: 'whoami',
+      typing_interval: 190,
+      blink_interval: '1.6s',
+      cursor_color: '#000'
+    });
   }
 
 
@@ -68,6 +61,13 @@ $(document).ready(function(){
     }
   });
 
+  // SCROLL EVENT: skills glow
+  // function skillGlow(){
+  //   var skillList = $('.front-end-list').children('li');
+  //   for(var i = 0, len = skillList.length; i<len; i++){
+  //     $(skillList[i]).addClass('skills-glow');
+  //   }
+  // }
 
 // Portfolio section
 
@@ -165,7 +165,45 @@ $(document).ready(function(){
 
   }
 
-  // FUNCTIONS CALLED ON LOAD
+// SMOOTH SCROLL
+  // Source: css-tricks smooth scroll, modified to only act on a tags inside nav.
+  $(function() {
+    $('.lg-nav-links a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1200);
+          return false;
+        }
+      }
+    });
+  });
+
+
+// SCROLLTOP FUNCTIONALITY
+  // Note for future self: This function calls the scroller inner function, with target element, position from top of target elem for when the callback should fire, and the callback
+  function scrollEventFire(){
+  
+    function scroller(elem, posChosen, callback){
+
+      function scrollEvent(){
+        if($(window).scrollTop() >= $(elem).position().top - posChosen){
+          callback();
+          $(document).off('scroll', scrollEvent);
+        }
+      }
+    
+      $(document).on('scroll', scrollEvent);
+    }
+
+    // Scroll event binding
+    scroller('#about_me', 125, whoamiCreator);
+  }
+
+// FUNCTIONS CALLED ON LOAD
   scrollEventFire();
   headerSizer();
   projects();

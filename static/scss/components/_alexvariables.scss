@@ -1,0 +1,24 @@
+
+  // BODY
+  $body-color: #F5F5F5;
+
+	// SKILL SECTION
+$skills-color: #fff;
+$skills-box-shadow: #550000;
+$skills-box-shadow-hover: #0B6E0B;
+
+	// KEYFRAMES MIXIN
+@mixin keyframes( $animationName ){
+  @-webkit-keyframes #{$animationName} {
+      @content;
+  }
+  @-moz-keyframes #{$animationName} {
+      @content;
+  }
+  @-o-keyframes #{$animationName} {
+      @content;
+  }
+  @keyframes #{$animationName} {
+      @content;
+  }
+}

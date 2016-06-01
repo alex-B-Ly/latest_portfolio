@@ -1,5 +1,12 @@
 body{
-	background-color: #F5F5F5;
+	background-color: $body-color;
+}
+
+/* SHARED */
+#skills h2,
+#projects h2,
+#contact h2{
+	font-size: 5em;
 }
 
 /* HEADER */
@@ -60,14 +67,14 @@ body{
 }
 
 #skills{
-	padding: 75px 0;
+	padding: 50px 0;
 	background-color: #2F2F2F;
 	background: url("../img/patterns/congruent_outline.png");
 		/*========================================================
 		 This pattern is downloaded from www.subtlepatterns.com 
 		 If you need more, that's where to get'em.
 		========================================================*/
-	color: #fff;
+	color: $skills-color;
 }
 
 .fa-hand-pointer-o,
@@ -98,7 +105,7 @@ body{
 	display: inline-block;
 	margin: 20px 10px;
 	background: rgba(0,0,0, 0.5);
-	box-shadow: 0 0 10px #550000;
+	box-shadow: 0 0 10px $skills-box-shadow;
 	transition: box-shadow 1.2s;
 	cursor: pointer;
 }
@@ -106,7 +113,7 @@ body{
 .front-end-list > li:hover,
 .back-end-list > li:hover,
 .tools-list > li:hover{
-	box-shadow: 0 0 40px #0B6E0B;
+	box-shadow: 0 0 40px $skills-box-shadow-hover;
 }
 
 .skill-trigger{
@@ -128,6 +135,10 @@ body{
 }
 
 /* PROJECTS SECTION */
+#projects{
+	padding: 50px 0;
+}
+
 .project{
 	padding: 30px 0 10px 0 !important;
 	cursor: pointer;
@@ -164,63 +175,30 @@ body{
 	padding-right: 10px;
 }
 
+/* CONTACT SECTION */
+#contact{
+	background: darken($body-color, 5%);
+	margin-bottom: 0;
+	padding: 50px 0;
+}
+
+.map-wrapper{
+	height: 300px;
+}
+
+.contact-map{
+	width: 100%;
+	height: 100%;
+}
+
+.location-desc{
+	font-size:1.3em;
+}
+
 /* FOOTER */
 footer{
 	background: $primary-color;
 	position: absolute;
 	width: 100%;
 	color: #fff;
-}
-
-/* TYPEWRITING JS PLUGIN */
-@-webkit-keyframes blink {
-	0% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@-moz-keyframes blink {
-	0% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes blink {
-	0% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-.whoami.typingCursor::after {
-	content: "";
-	width: 17px;
-	height: 33px;
-	margin-left: 12px;
-	display: inline-block;
-	vertical-align: bottom;
-	background-color: black;
-	position: relative;
-	bottom: 15px;
-
-	-webkit-animation: blink 1.6s infinite;
-	   -moz-animation: blink 1.6s infinite;
-			animation: blink 1.6s infinite;
 }
