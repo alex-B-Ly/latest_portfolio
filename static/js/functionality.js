@@ -27,7 +27,7 @@ $(document).ready(function(){
 
 // About Me section
 
-  // SCROLL EVENT
+  // SCROLL EVENT: whoami
   function whoamiCreator(){
     var typeWriting = new TypeWriting({
       targetElement: document.getElementsByClassName('whoami')[0],
@@ -61,6 +61,13 @@ $(document).ready(function(){
     }
   });
 
+  // SCROLL EVENT: skills glow
+  // function skillGlow(){
+  //   var skillList = $('.front-end-list').children('li');
+  //   for(var i = 0, len = skillList.length; i<len; i++){
+  //     $(skillList[i]).addClass('skills-glow');
+  //   }
+  // }
 
 // Portfolio section
 
@@ -157,6 +164,23 @@ $(document).ready(function(){
     }
 
   }
+
+// SMOOTH SCROLL
+  // Source: css-tricks smooth scroll, modified to only act on a tags inside nav.
+  $(function() {
+    $('nav a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1200);
+          return false;
+        }
+      }
+    });
+  });
 
 
 // SCROLLTOP FUNCTIONALITY
