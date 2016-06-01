@@ -2,15 +2,7 @@
   {
     "title": "Image Search",
     "year": 2016,
-    "techs": [{
-      "tech": "JavaScript"
-    }, {
-      "tech": "jQuery"
-    }, {
-      "tech": "RESTful APIs"
-    }, {
-      "tech": "Bootstrap"
-    }],
+    "techs": ["JavaScript", "jQuery", "RESTful APIs", "Bootstrap"],
     "description": "Bootcamp front end project that allows users to search for a location and find its weather and images, along with a map of the location.",
     "project_url": "http://vast-meadow-1872.herokuapp.com/",
     "project_code": "https://github.com/alex-B-Ly/Mountain"
@@ -18,17 +10,7 @@
   {
     "title": "Rutgers Flyers",
     "year": 2016,
-    "techs": [{
-      "tech": "NodeJS"
-    }, {
-      "tech": "Express"
-    }, {
-      "tech": "MySQL"
-    }, {
-      "tech": "jQuery"
-    }, {
-      "tech": "Bootstrap"
-    }],
+    "techs": ["NodeJS", "Express", "MySQL", "jQuery", "Bootstrap"],
     "description": "Collaborative project that uses the Google Places API to show restaurants, bars, and places to study around the Rutgers campus in New Brunswick, NJ.  This project shows user reviews, hours of operation, and price rating.",
     "project_url": "http://rutgers-flyers.herokuapp.com/",
     "project_code": "https://github.com/alex-B-Ly/Rutgers-flyers"
@@ -36,13 +18,7 @@
   {
     "title": "Alex Ly - Web Dev",
     "year": 2016,
-    "techs": [{
-      "tech": "jQuery"
-    }, {
-      "tech": "Materialize"
-    }, {
-      "tech": "Sass"
-    }],
+    "techs": ["jQuery", "Materialize", "Sass"],
     "description": "The site you are currently on.",
     "project_url": "http://www.alexly-webdev.com",
     "project_code": "https://github.com/alex-B-Ly/latest_portfolio"
@@ -50,13 +26,7 @@
   {
     "title": "French Learner's Guide",
     "year": 2015,
-    "techs": [{
-      "tech": "JavaScript"
-    }, {
-      "tech": "jQuery"
-    }, {
-      "tech": "Sass"
-    }],
+    "techs": ["JavaScript", "jQuery", "Sass"],
     "description": "My first site. I created the French Learner's Guide as a learning supplement to assist both students and travelers gain a better understanding of the language.",
     "picture_url": "static/img/projects/frenchlearnersguide.jpg",
     "project_url": "http://www.frenchlearnersguide.com"
@@ -64,9 +34,7 @@
   {
     "title": "RPSLS",
     "year": 2015,
-    "techs": [{
-      "tech": ""
-    }],
+    "techs": [],
     "description": "Bored? Play a few rounds of Rock, Paper, Scissors, Lizard, Spock!",
     "project_url": "https://powerful-basin-5893.herokuapp.com/",
     "project_code": "https://github.com/alex-B-Ly/RPS-game"
