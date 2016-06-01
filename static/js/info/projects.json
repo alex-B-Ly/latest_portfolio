@@ -8,6 +8,8 @@
       "tech": "jQuery"
     }, {
       "tech": "RESTful APIs"
+    }, {
+      "tech": "Bootstrap"
     }],
     "description": "Bootcamp front end project that allows users to search for a location and find its weather and images, along with a map of the location.",
     "project_url": "http://vast-meadow-1872.herokuapp.com/",
@@ -24,6 +26,8 @@
       "tech": "MySQL"
     }, {
       "tech": "jQuery"
+    }, {
+      "tech": "Bootstrap"
     }],
     "description": "Collaborative project that uses the Google Places API to show restaurants, bars, and places to study around the Rutgers campus in New Brunswick, NJ.  This project shows user reviews, hours of operation, and price rating.",
     "project_url": "http://rutgers-flyers.herokuapp.com/",
