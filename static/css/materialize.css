@@ -6299,6 +6299,9 @@ body {
   padding: 30px 0 10px 0 !important;
   cursor: pointer; }
 
+.project img {
+  box-shadow: 2px -2px 8px #000; }
+
 #project-modal h4 {
   margin: 20px 0 10px 0;
   font-size: 2em;
