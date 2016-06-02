@@ -107,7 +107,7 @@ $(document).ready(function(){
     projectDescription = $('<p>').text(data.description),
     projectTechs = data.techs,
     projectYear = data.year,
-    projectPic = $('<img>').attr('src', data.picture_url).addClass('img-responsive'),
+    projectPic = $('<img>').attr('src', data.picture_url).addClass('responsive-img'),
     projectUrl = data.project_url,
     projectCode = data.project_code;
 
