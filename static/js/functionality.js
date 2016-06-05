@@ -24,6 +24,17 @@ $(document).ready(function(){
 
   $(window).resize(headerSizer);
 
+// HEADER EVENT: full stack typing
+  // Do not show cursor, makes title look cleaner
+  function fullStackTyping(){
+    var fullStack = new TypeWriting({
+      targetElement: document.getElementsByClassName('job-title')[0],
+      inputString: 'Full Stack Developer',
+      typing_interval: 90,
+      blink_interval: '1.6s',
+      cursor_color: '#fff'
+    });
+  }
 
 // About Me section
 
@@ -218,6 +229,7 @@ $(document).ready(function(){
   });
 
 // FUNCTIONS CALLED ON LOAD
+  fullStackTyping();
   scrollEventFire();
   headerSizer();
   projects();

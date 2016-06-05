@@ -50,3 +50,19 @@
 	   -moz-animation: blink 1.6s infinite;
 			animation: blink 1.6s infinite;
 }
+
+.job-title.typingCursor::after {
+	content: "";
+	width: 0;
+	height: 0;
+	margin-left: 0;
+	display: inline-block;
+	vertical-align: bottom;
+	background-color: black;
+	position: relative;
+	bottom: 15px;
+
+	-webkit-animation: blink 1.6s infinite;
+	   -moz-animation: blink 1.6s infinite;
+			animation: blink 1.6s infinite;
+}
