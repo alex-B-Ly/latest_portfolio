@@ -208,6 +208,15 @@ $(document).ready(function(){
     // scroller('.front-end-list', 200, skillGlow);
   }
 
+// MATERIAL MODAL SCROLL POSITION FIX
+  $(document).on('click', '.project' ,function(){
+    $('#project-modal').scrollTop(0)
+  });
+
+  $(document).on('click', '.skill-trigger' ,function(){
+    $('#skill-modal').scrollTop(0)
+  });
+
 // FUNCTIONS CALLED ON LOAD
   scrollEventFire();
   headerSizer();
