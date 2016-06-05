@@ -49,6 +49,14 @@ $(document).ready(function(){
     });
   }
 
+  // Nav color change
+  function navColorRed(){
+    $('nav').css('background', '#8A0E0E');
+  }
+
+  function navColorBlack(){
+    $('nav').css('background', '#000');
+  }
 
 // Skills section
   $('.skill-trigger').on('click', function(){
@@ -200,22 +208,29 @@ $(document).ready(function(){
 
 // SCROLLTOP FUNCTIONALITY
   // Note for future self: This function calls the scroller inner function, with target element, position from top of target elem for when the callback should fire, and the callback
+    // This function removes event listener when callback is executed
   function scrollEventFire(){
   
-    function scroller(elem, posChosen, callback){
-
+    function scroller(elem, posChosen, callback, remover, callback2){
       function scrollEvent(){
         if($(window).scrollTop() >= $(elem).position().top - posChosen){
           callback();
-          $(document).off('scroll', scrollEvent);
+          if(remover){
+            $(document).off('scroll', scrollEvent);
+          }
+        }
+        if(callback2){
+          if($(window).scrollTop() < $(elem).position().top - posChosen){
+            callback2();
+          }
         }
       }
-    
       $(document).on('scroll', scrollEvent);
     }
 
     // Scroll event binding
-    scroller('#about_me', 125, whoamiCreator);
+    scroller('#about_me', 125, whoamiCreator, true);
+    scroller('#about_me', 125, navColorRed, false, navColorBlack);
     // scroller('.front-end-list', 200, skillGlow);
   }
 

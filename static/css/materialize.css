@@ -6182,6 +6182,10 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 body {
   background-color: #F5F5F5; }
 
+nav {
+  background: #000;
+  transition: all 1.3s; }
+
 /* SHARED */
 #skills h2,
 #projects h2,
