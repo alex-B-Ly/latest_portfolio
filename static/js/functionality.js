@@ -30,8 +30,8 @@ $(document).ready(function(){
     var fullStack = new TypeWriting({
       targetElement: document.getElementsByClassName('job-title')[0],
       inputString: 'Full Stack Developer',
-      typing_interval: 90,
-      blink_interval: '1.6s',
+      typing_interval: 60,
+      blink_interval: '0',
       cursor_color: '#fff'
     });
   }
