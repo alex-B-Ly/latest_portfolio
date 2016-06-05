@@ -211,26 +211,31 @@ $(document).ready(function(){
     // This function removes event listener when callback is executed
   function scrollEventFire(){
   
-    function scroller(elem, posChosen, callback, remover, callback2){
+    function scroller(elem, posChosen, comp, callback, remover){
       function scrollEvent(){
-        if($(window).scrollTop() >= $(elem).position().top - posChosen){
-          callback();
-          if(remover){
-            $(document).off('scroll', scrollEvent);
+        if(comp === 'greater'){
+          if($(window).scrollTop() >= $(elem).position().top - posChosen){
+            callback();
+            if(remover){
+              $(document).off('scroll', scrollEvent);
+            }
           }
-        }
-        if(callback2){
+        }else if('less'){
           if($(window).scrollTop() < $(elem).position().top - posChosen){
-            callback2();
+            callback();
+            if(remover){
+              $(document).off('scroll', scrollEvent);
+            }
           }
-        }
+        }        
       }
       $(document).on('scroll', scrollEvent);
     }
 
     // Scroll event binding
-    scroller('#about_me', 125, whoamiCreator, true);
-    scroller('#about_me', 125, navColorRed, false, navColorBlack);
+    scroller('#about_me', 125, 'greater' ,whoamiCreator, true);
+    scroller('#about_me', 125, 'greater', navColorRed, false);
+    scroller('#about_me', 125, 'less', navColorBlack, false);
     // scroller('.front-end-list', 200, skillGlow);
   }
 
