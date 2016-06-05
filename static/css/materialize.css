@@ -6182,6 +6182,10 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 body {
   background-color: #F5F5F5; }
 
+nav {
+  background: #000;
+  transition: all 1.3s; }
+
 /* SHARED */
 #skills h2,
 #projects h2,
@@ -6385,6 +6389,20 @@ footer {
   width: 17px;
   height: 33px;
   margin-left: 12px;
+  display: inline-block;
+  vertical-align: bottom;
+  background-color: black;
+  position: relative;
+  bottom: 15px;
+  -webkit-animation: blink 1.6s infinite;
+  -moz-animation: blink 1.6s infinite;
+  animation: blink 1.6s infinite; }
+
+.job-title.typingCursor::after {
+  content: "";
+  width: 0;
+  height: 0;
+  margin-left: 0;
   display: inline-block;
   vertical-align: bottom;
   background-color: black;

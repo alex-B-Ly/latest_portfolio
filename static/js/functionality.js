@@ -24,6 +24,17 @@ $(document).ready(function(){
 
   $(window).resize(headerSizer);
 
+// HEADER EVENT: full stack typing
+  // Do not show cursor, makes title look cleaner
+  function fullStackTyping(){
+    var fullStack = new TypeWriting({
+      targetElement: document.getElementsByClassName('job-title')[0],
+      inputString: 'Full Stack Developer',
+      typing_interval: 60,
+      blink_interval: '0',
+      cursor_color: '#fff'
+    });
+  }
 
 // About Me section
 
@@ -38,6 +49,14 @@ $(document).ready(function(){
     });
   }
 
+  // Nav color change
+  function navColorRed(){
+    $('nav').css('background', '#8A0E0E');
+  }
+
+  function navColorBlack(){
+    $('nav').css('background', '#000');
+  }
 
 // Skills section
   $('.skill-trigger').on('click', function(){
@@ -188,23 +207,35 @@ $(document).ready(function(){
 
 
 // SCROLLTOP FUNCTIONALITY
-  // Note for future self: This function calls the scroller inner function, with target element, position from top of target elem for when the callback should fire, and the callback
+  // Note for future self: This function calls the scroller inner function, with target element, position from top of target elem for when the callback should fire, comp operator to have different scroll events, the callback, and remover to choose if eventListener should be removed
+    // This function removes event listener when callback is executed
   function scrollEventFire(){
   
-    function scroller(elem, posChosen, callback){
-
+    function scroller(elem, posChosen, comp, callback, remover){
       function scrollEvent(){
-        if($(window).scrollTop() >= $(elem).position().top - posChosen){
-          callback();
-          $(document).off('scroll', scrollEvent);
-        }
+        if(comp === 'greater'){
+          if($(window).scrollTop() >= $(elem).position().top - posChosen){
+            callback();
+            if(remover){
+              $(document).off('scroll', scrollEvent);
+            }
+          }
+        }else if('less'){
+          if($(window).scrollTop() < $(elem).position().top - posChosen){
+            callback();
+            if(remover){
+              $(document).off('scroll', scrollEvent);
+            }
+          }
+        }        
       }
-    
       $(document).on('scroll', scrollEvent);
     }
 
     // Scroll event binding
-    scroller('#about_me', 125, whoamiCreator);
+    scroller('#about_me', 125, 'greater' ,whoamiCreator, true);
+    scroller('#about_me', 125, 'greater', navColorRed, false);
+    scroller('#about_me', 125, 'less', navColorBlack, false);
     // scroller('.front-end-list', 200, skillGlow);
   }
 
@@ -218,6 +249,7 @@ $(document).ready(function(){
   });
 
 // FUNCTIONS CALLED ON LOAD
+  fullStackTyping();
   scrollEventFire();
   headerSizer();
   projects();

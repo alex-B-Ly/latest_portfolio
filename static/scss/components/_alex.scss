@@ -2,6 +2,11 @@ body{
 	background-color: $body-color;
 }
 
+nav{
+	background: #000;
+	transition: all 1.3s;
+}
+
 /* SHARED */
 #skills h2,
 #projects h2,
