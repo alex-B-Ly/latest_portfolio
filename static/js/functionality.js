@@ -207,7 +207,7 @@ $(document).ready(function(){
 
 
 // SCROLLTOP FUNCTIONALITY
-  // Note for future self: This function calls the scroller inner function, with target element, position from top of target elem for when the callback should fire, and the callback
+  // Note for future self: This function calls the scroller inner function, with target element, position from top of target elem for when the callback should fire, comp operator to have different scroll events, the callback, and remover to choose if eventListener should be removed
     // This function removes event listener when callback is executed
   function scrollEventFire(){
   
