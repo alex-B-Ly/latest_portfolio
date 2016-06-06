@@ -201,7 +201,13 @@ nav{
 	padding: 50px 0;
 }
 
+.contact-info-list li{
+	font-size: 1.4em;
+	margin-bottom: 12px; 
+}
+
 .map-wrapper{
+	margin-top: 20px;
 	height: 300px;
 }
 
@@ -212,6 +218,12 @@ nav{
 
 .location-desc{
 	font-size:1.3em;
+}
+
+.fa-envelope,
+.fa-mobile{
+	font-size: 1.5em;
+	margin-right: 15px;
 }
 
 /* FOOTER */

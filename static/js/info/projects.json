@@ -14,7 +14,6 @@
     "techs": ["NodeJS", "Express", "MySQL", "jQuery", "Bootstrap"],
     "description": "Collaborative project that uses the Google Places API to show restaurants, bars, and places to study around the Rutgers campus in New Brunswick, NJ.  This project shows user reviews, hours of operation, and price rating.",
     "picture_url": "static/img/projects/ruflyers.jpg",
-    "project_url": "http://rutgers-flyers.herokuapp.com/",
     "project_code": "https://github.com/alex-B-Ly/Rutgers-flyers"
   },
   {
