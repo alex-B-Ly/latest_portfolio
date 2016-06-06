@@ -30,7 +30,7 @@ $(document).ready(function(){
     var fullStack = new TypeWriting({
       targetElement: document.getElementsByClassName('job-title')[0],
       inputString: 'Full Stack Developer',
-      typing_interval: 60,
+      typing_interval: 55,
       blink_interval: '0',
       cursor_color: '#fff'
     });
@@ -235,7 +235,7 @@ $(document).ready(function(){
     // Scroll event binding
     scroller('#about_me', 125, 'greater' ,whoamiCreator, true);
     scroller('#about_me', 125, 'greater', navColorRed, false);
-    scroller('#about_me', 125, 'less', navColorBlack, false);
+    scroller('.header-image', 1, 'less', navColorBlack, false);
     // scroller('.front-end-list', 200, skillGlow);
   }
 
