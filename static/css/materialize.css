@@ -6208,7 +6208,8 @@ nav {
   color: #fff; }
 
 .header-image h1 {
-  font-size: 6.5em; }
+  font-size: 6.5em;
+  font-family: 'Noto Serif', serif; }
 
 .header-image p {
   font-size: 3em;

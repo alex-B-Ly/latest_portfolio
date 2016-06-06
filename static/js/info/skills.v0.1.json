@@ -57,5 +57,9 @@
 		"skill": "Trello",
 		"description": "I have used Trello as an organizational tool to list issues and progress on larger projects involving multiple developers.",
 		"itag_class": "devicon-trello-plain"
+	}, {
+		"skill": "Linux",
+		"description": "I use Linux (Ubuntu) for development.  I working on Linux (and Mac) because I am relatively comfortable with the command line, which speeds up development.",
+		"itag_class": "devicon-linux-plain colored"
 	}]
 ]
