@@ -6192,6 +6192,26 @@ nav {
 #contact h2 {
   font-size: 5em; }
 
+/* Nav links */
+.lg-nav-links li a:hover {
+  text-shadow: 0 0 5px #fff; }
+
+.lg-nav-drop {
+  background: #000; }
+
+.lg-nav-drop li a {
+  color: #fff;
+  font-weight: 500; }
+
+.lg-nav-drop li:hover {
+  background: #8A0E0E; }
+
+.side-nav {
+  background: #8A0E0E; }
+
+.side-nav li a {
+  color: #fff; }
+
 /* HEADER */
 .header-image {
   background: #000;
