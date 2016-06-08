@@ -17,13 +17,14 @@ nav{
 /* HEADER */
 .header-image{
 	background: #000;
+	background: url('../img/computer.jpg') no-repeat center center fixed;
 	background-size: cover;
 	height: 100vh;
 }
 
 .title-wrap{
 	margin: 0 auto;
-	width:50%;
+	width:100%;
 	background: rgba(0, 0, 0, 0.8);
 }
 

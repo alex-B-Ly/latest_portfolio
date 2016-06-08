@@ -6195,12 +6195,13 @@ nav {
 /* HEADER */
 .header-image {
   background: #000;
+  background: url("../img/computer.jpg") no-repeat center center fixed;
   background-size: cover;
   height: 100vh; }
 
 .title-wrap {
   margin: 0 auto;
-  width: 50%;
+  width: 100%;
   background: rgba(0, 0, 0, 0.8); }
 
 .header-image h1,
@@ -6422,5 +6423,17 @@ footer {
   -webkit-animation: blink 1.6s infinite;
   -moz-animation: blink 1.6s infinite;
   animation: blink 1.6s infinite; }
+
+/* MOBILE */
+@media screen and (max-width: 600px) {
+  /* HEADER */
+  .header-image {
+    background: #000; }
+
+  .header-image h1 {
+    font-size: 5em; }
+
+  .header-image p {
+    font-size: 2.3em; } }
 
 /*# sourceMappingURL=materialize.css.map */
