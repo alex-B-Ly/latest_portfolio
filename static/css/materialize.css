@@ -6190,7 +6190,7 @@ nav {
 #skills h2,
 #projects h2,
 #contact h2 {
-  font-size: 5em;
+  font-size: 5.6em;
   font-family: 'Noto Serif', serif; }
 
 /* Nav links */
@@ -6270,6 +6270,9 @@ nav {
    If you need more, that's where to get'em.
   ========================================================*/
   color: #fff; }
+
+#skills h3 {
+  font-family: Helvetica, sans-serif; }
 
 .fa-hand-pointer-o,
 .skills-click-p,
@@ -6447,6 +6450,12 @@ footer {
 
 /* MOBILE */
 @media screen and (max-width: 600px) {
+  /* Shared */
+  #skills h2,
+  #projects h2,
+  #contact h2 {
+    font-size: 4.4em; }
+
   /* HEADER */
   .header-image {
     background: #000; }

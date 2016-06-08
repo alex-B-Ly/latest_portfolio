@@ -1,6 +1,12 @@
 
 /* MOBILE */
 @media screen and (max-width: 600px){
+	/* Shared */
+	#skills h2,
+	#projects h2,
+	#contact h2{
+		font-size: 4.4em;
+	}
 
 	/* HEADER */
 	.header-image{
