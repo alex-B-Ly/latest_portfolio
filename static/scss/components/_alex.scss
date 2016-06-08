@@ -11,7 +11,7 @@ nav{
 #skills h2,
 #projects h2,
 #contact h2{
-	font-size: 5em;
+	font-size: 5.6em;
 	font-family: 'Noto Serif', serif;
 }
 
@@ -109,6 +109,10 @@ nav{
 		 If you need more, that's where to get'em.
 		========================================================*/
 	color: $skills-color;
+}
+
+#skills h3{
+	font-family: Helvetica, sans-serif;
 }
 
 .fa-hand-pointer-o,
