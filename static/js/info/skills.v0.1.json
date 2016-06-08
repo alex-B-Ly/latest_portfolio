@@ -21,7 +21,7 @@
 		"itag_class": "devicon-sass-original"
 	}, {
 		"skill": "Bootstrap",
-		"description": "I use Bootstrap and other frameworks (this site uses Materialize) to facilitate and speed up development with the use of a grid system that has built in JS components.",
+		"description": "I can use Bootstrap and other frameworks (this site uses Materialize) to facilitate and speed up development with the use of a grid system that has built in JS components.",
 		"itag_class": "devicon-bootstrap-plain"
 	}, {
 		"skill": "Angular",
@@ -57,5 +57,9 @@
 		"skill": "Trello",
 		"description": "I have used Trello as an organizational tool to list issues and progress on larger projects involving multiple developers.",
 		"itag_class": "devicon-trello-plain"
+	}, {
+		"skill": "Linux",
+		"description": "I use Linux (Ubuntu) for development.  I working on Linux (and Mac) because I am relatively comfortable with the command line, which speeds up development.",
+		"itag_class": "devicon-linux-plain colored"
 	}]
 ]
