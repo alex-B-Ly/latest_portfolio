@@ -6190,7 +6190,28 @@ nav {
 #skills h2,
 #projects h2,
 #contact h2 {
-  font-size: 5em; }
+  font-size: 5em;
+  font-family: 'Noto Serif', serif; }
+
+/* Nav links */
+.lg-nav-links li a:hover {
+  text-shadow: 0 0 5px #fff; }
+
+.lg-nav-drop {
+  background: #000; }
+
+.lg-nav-drop li a {
+  color: #fff;
+  font-weight: 500; }
+
+.lg-nav-drop li:hover {
+  background: #8A0E0E; }
+
+.side-nav {
+  background: #8A0E0E; }
+
+.side-nav li a {
+  color: #fff; }
 
 /* HEADER */
 .header-image {
@@ -6434,6 +6455,11 @@ footer {
     font-size: 5em; }
 
   .header-image p {
-    font-size: 2.3em; } }
+    font-size: 2.3em; }
+
+  /* Skills and Projects */
+  .skills-click-p,
+  .projects-click-p {
+    font-size: 1.2em; } }
 
 /*# sourceMappingURL=materialize.css.map */
