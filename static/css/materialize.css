@@ -6179,6 +6179,9 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 .skills-glow {
   animation: glowskills 1s 1s 1; }
 
+html {
+  background: #000; }
+
 body {
   background-color: #F5F5F5; }
 
