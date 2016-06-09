@@ -68,7 +68,7 @@ $(document).ready(function(){
     var skillType = $(this).attr('data-skill-type');
     var skillName = $(this).attr('data-skill-name');
 
-    $.getJSON('http://localhost/sites/latest_portfolio/static/js/info/skills.v1.json', function(data){
+    $.getJSON('http://www.alexly-webdev.com/static/js/info/skills.v1.json', function(data){
       var skillData = data[skillType];
       for(var i=0, len=skillData.length; i<len; i++){
         if(skillData[i].skill === skillName){
@@ -89,7 +89,7 @@ $(document).ready(function(){
 
     // Gets project JSON and creates cards on load.
   function projects(){
-  	$.getJSON('http://localhost/sites/latest_portfolio/static/js/info/projects.json', function(data){
+  	$.getJSON('http://www.alexly-webdev.com/static/js/info/projects.json', function(data){
   		$(data).each(function(i, val){
   			projectCreator(val);
   		});
