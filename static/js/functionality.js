@@ -68,7 +68,7 @@ $(document).ready(function(){
     var skillType = $(this).attr('data-skill-type');
     var skillName = $(this).attr('data-skill-name');
 
-    $.getJSON('http://localhost/sites/latest_portfolio/static/js/info/skills.v0.1.json', function(data){
+    $.getJSON('http://localhost/sites/latest_portfolio/static/js/info/skills.v1.json', function(data){
       var skillData = data[skillType];
       for(var i=0, len=skillData.length; i<len; i++){
         if(skillData[i].skill === skillName){
@@ -84,14 +84,6 @@ $(document).ready(function(){
       $('.skill-modal-description').text(skillChosen.description);
     }
   });
-
-  // SCROLL EVENT: skills glow
-  // function skillGlow(){
-  //   var skillList = $('.front-end-list').children('li');
-  //   for(var i = 0, len = skillList.length; i<len; i++){
-  //     $(skillList[i]).addClass('skills-glow');
-  //   }
-  // }
 
 // Portfolio section
 
@@ -213,7 +205,7 @@ $(document).ready(function(){
 
 // SCROLLTOP FUNCTIONALITY
   // Note for future self: This function calls the scroller inner function, with target element, position from top of target elem for when the callback should fire, comp operator to have different scroll events, the callback, and remover to choose if eventListener should be removed
-    // This function removes event listener when callback is executed
+    // This function removes event listener if remover === true
   function scrollEventFire(){
   
     function scroller(elem, posChosen, comp, callback, remover){
@@ -241,7 +233,6 @@ $(document).ready(function(){
     scroller('#about_me', 125, 'greater' ,whoamiCreator, true);
     scroller('#about_me', 125, 'greater', navColorRed, false);
     scroller('.header-image', 1, 'less', navColorBlack, false);
-    // scroller('.front-end-list', 200, skillGlow);
   }
 
 // MATERIAL MODAL SCROLL POSITION FIX

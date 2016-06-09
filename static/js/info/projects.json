@@ -21,6 +21,7 @@
     "year": 2016,
     "techs": ["jQuery", "Materialize", "Sass"],
     "description": "The site you are currently on.",
+    "picture_url": "static/img/projects/alexlywebdev.jpg",
     "project_url": "http://www.alexly-webdev.com",
     "project_code": "https://github.com/alex-B-Ly/latest_portfolio"
   },

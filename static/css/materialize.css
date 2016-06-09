@@ -6193,6 +6193,11 @@ nav {
   font-size: 5.6em;
   font-family: 'Noto Serif', serif; }
 
+.modal-content h3 {
+  font-family: 'Noto Serif', serif;
+  font-size: 3.4em;
+  margin: 25px 0; }
+
 /* Nav links */
 .lg-nav-links li a:hover {
   text-shadow: 0 0 5px #fff; }
@@ -6469,6 +6474,18 @@ footer {
   /* Skills and Projects */
   .skills-click-p,
   .projects-click-p {
-    font-size: 1.2em; } }
+    font-size: 1.2em; }
+
+  .modal-content h3 {
+    font-size: 2.3em;
+    margin: 20px 0; } }
+@media screen and (min-width: 601px) {
+  .project {
+    transition: all 1.1s; }
+
+  .project:hover {
+    transition: all 0.7s;
+    background: #450707;
+    color: #fff; } }
 
 /*# sourceMappingURL=materialize.css.map */
