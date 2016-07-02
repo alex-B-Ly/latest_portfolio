@@ -34,11 +34,6 @@ $(document).ready(function(){
       blink_interval: '0',
       cursor_color: '#fff'
     });
-    setTimeout(function(){
-      if($('.job-title').text() !== 'Full Stack Developer'){
-        $('.job-title').text('Full Stack Developer');
-      }
-    }, 1500);
   }
 
 // About Me section
@@ -52,6 +47,11 @@ $(document).ready(function(){
       blink_interval: '1.6s',
       cursor_color: '#000'
     });
+    setTimeout(function(){
+      if($('.job-title').text() !== 'Full Stack Developer'){
+        $('.job-title').text('Full Stack Developer');
+      }
+    }, 1500);
   }
 
   // Nav color change
